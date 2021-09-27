@@ -4,6 +4,8 @@ using UnityEngine;
 
 internal class SpawnController : MonoBehaviour
 {
+
+    public System.Action<int> OnChangeCount;
     InsectionCreator[] insectionCreator;
     SpawnPoints spawnPoints;
     Transform insectionsHolder;
@@ -28,6 +30,14 @@ internal class SpawnController : MonoBehaviour
         }
     }
 
+    void Subscribe(int count)
+    {
+        if(OnChangeCount != null)
+        {
+            OnChangeCount(count);
+        }
+    }
+
     IEnumerator Spawn()
     {
         string holderName = "Insections";
@@ -48,6 +58,7 @@ internal class SpawnController : MonoBehaviour
             insection.transform.position = spawnPoints.Position[rndItem].transform.position;
             insection.transform.parent = insectionsHolder;
             currentNumber++;
+            OnChangeCount?.Invoke(currentNumber);
 
             yield return new WaitForSeconds(timeBetwenSpawn);
         }

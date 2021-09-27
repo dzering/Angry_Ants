@@ -6,13 +6,20 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] Text scoreText;
+    [SerializeField] Text bugsNumberText;
+
+    SpawnController spawnController;
     Camera mainCamera;
-    IObserver score;
+
+    Score bugsNumber;
+    Score score;
 
     private void Start()
     {
         mainCamera = Camera.main;
-        score = new Score(scoreText);
+        bugsNumber = new Score(bugsNumberText);
+        spawnController = GetComponent<SpawnController>();
+        spawnController.OnChangeCount += bugsNumber.UpdateCountText;
         // Реализовать подписку в Спаунере, при создании каждого насекомого.
     }
 

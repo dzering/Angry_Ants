@@ -15,16 +15,6 @@ public abstract class EnemyBase : MonoBehaviour
         enemyAI.Move();
     }
 
-    //private void Update()
-    //{
-    //    enemyAI.Move();
-    //}
-
-    void GetBoundsGameField()
-    {
-
-    }
-
     public void Dies()
     {
         events.Notify(State.Dead);
