@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     {
         if (Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition), out var hit, Mathf.Infinity))
         {
-            if (hit.collider.TryGetComponent<InsectionBase>(out var p))
+            if (hit.collider.TryGetComponent<EnemyBase>(out var p))
             {
                 p.Dies();
             }

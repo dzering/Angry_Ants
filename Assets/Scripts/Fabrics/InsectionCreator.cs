@@ -4,5 +4,5 @@ using UnityEngine;
 
 internal abstract class InsectionCreator : MonoBehaviour
 {
-    public abstract InsectionBase CreateInsection();
+    public abstract EnemyBase CreateInsection();
 }
