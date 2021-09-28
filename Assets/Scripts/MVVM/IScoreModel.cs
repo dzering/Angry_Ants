@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IScoreModel
 {
-    string CurrentText { get; set; }
+    int CurrentCount { get; set; }
 }

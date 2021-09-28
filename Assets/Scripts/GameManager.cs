@@ -5,6 +5,14 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    //MVVM test
+    [SerializeField] ScoreView scoreView;
+
+    //
+
+
+
+
     [SerializeField] Text scoreText;
     [SerializeField] Text bugsNumberText;
 
@@ -21,7 +29,12 @@ public class GameManager : MonoBehaviour
         spawnController = GetComponent<SpawnController>();
         spawnController.OnChangeCount += bugsNumber.UpdateCountText;
 
-        // Реализовать подписку в Спаунере, при создании каждого насекомого.
+        //MVVM test
+        ScoreModel scoreModel = new ScoreModel(0);
+        ScoreViewModel scoreViewModel = new ScoreViewModel(scoreModel);
+        scoreView.Initialize(scoreViewModel);
+        spawnController.OnChangeCount += scoreViewModel.ChangeText;
+        //
     }
 
     private void Update()

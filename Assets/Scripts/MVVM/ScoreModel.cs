@@ -4,5 +4,9 @@ using UnityEngine;
 
 public class ScoreModel : IScoreModel
 {
-    public string CurrentText { get; set; }
+    public int CurrentCount { get; set; }
+    public ScoreModel(int count)
+    {
+        CurrentCount = count;
+    }
 }
