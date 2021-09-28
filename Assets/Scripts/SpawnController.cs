@@ -30,14 +30,6 @@ internal class SpawnController : MonoBehaviour
         }
     }
 
-    void Subscribe(int count)
-    {
-        if(OnChangeCount != null)
-        {
-            OnChangeCount(count);
-        }
-    }
-
     IEnumerator Spawn()
     {
         string holderName = "Insections";

@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
         bugsNumber = new Score(bugsNumberText);
         spawnController = GetComponent<SpawnController>();
         spawnController.OnChangeCount += bugsNumber.UpdateCountText;
+
         // Реализовать подписку в Спаунере, при создании каждого насекомого.
     }
 

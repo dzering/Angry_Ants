@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IObserver
+public class ScoreModel : IScoreModel
 {
-    void ChangeState();
+    public string CurrentText { get; set; }
 }

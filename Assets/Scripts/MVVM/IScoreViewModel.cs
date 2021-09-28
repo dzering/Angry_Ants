@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IObserver
+public interface IScoreViewModel
 {
-    void ChangeState();
+    IScoreModel scoreModel { get; }
+    
 }
