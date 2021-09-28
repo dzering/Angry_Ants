@@ -5,16 +5,12 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    //MVVM test
-    [SerializeField] ScoreView scoreView;
-
-    //
-
-
-
+    ////MVVM test
+    //[SerializeField] ScoreView scoreView;
+    ////
 
     [SerializeField] Text scoreText;
-    [SerializeField] Text bugsNumberText;
+    [SerializeField] ScoreView bugsNumberText;
 
     SpawnController spawnController;
     Camera mainCamera;
@@ -25,16 +21,23 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         mainCamera = Camera.main;
-        bugsNumber = new Score(bugsNumberText);
         spawnController = GetComponent<SpawnController>();
-        spawnController.OnChangeCount += bugsNumber.UpdateCountText;
 
-        //MVVM test
-        ScoreModel scoreModel = new ScoreModel(0);
-        ScoreViewModel scoreViewModel = new ScoreViewModel(scoreModel);
-        scoreView.Initialize(scoreViewModel);
-        spawnController.OnChangeCount += scoreViewModel.ChangeText;
-        //
+        var scoreModel = new ScoreModel(0);
+        var scoreViewModel = new ScoreViewModel(scoreModel);
+        bugsNumberText.Initialize(scoreViewModel);
+
+        spawnController.OnChangeCount += scoreViewModel.UpdateState;
+        // bugsNumber = new Score(bugsNumberText);
+        // spawnController.OnChangeCount += bugsNumber.UpdateCountText;
+
+
+        ////MVVM test
+        //ScoreModel scoreModel = new ScoreModel(0);
+        //ScoreViewModel scoreViewModel = new ScoreViewModel(scoreModel);
+        //scoreView.Initialize(scoreViewModel);
+        //spawnController.OnChangeCount += scoreViewModel.UpdateState;
+        ////
     }
 
     private void Update()

@@ -13,7 +13,7 @@ public class ScoreViewModel : IScoreViewModel
     {
         ScoreModel = score;
     }
-    public void ChangeText(int count)
+    public void UpdateState(int count)
     {
         ScoreModel.CurrentCount = count;
         OnChangeText?.Invoke(ScoreModel.CurrentCount);
