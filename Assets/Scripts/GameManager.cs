@@ -29,6 +29,9 @@ public class GameManager : MonoBehaviour
         var scoreViewModel = new ScoreViewModel(scoreModel);
         scoreText.Initialize(scoreViewModel);
         spawnController.OnChangeScore += scoreViewModel.UpdateState;
+
+        //SpiderFactory factory = new SpiderFactory();
+        //factory.CreateSpider();
     }
 
     private void Update()

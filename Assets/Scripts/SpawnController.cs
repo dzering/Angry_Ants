@@ -52,13 +52,16 @@ internal class SpawnController : MonoBehaviour, IObserver
         {
  
             int rndItem = rnd.Next(insectionCreator.Length);
-            var insection = insectionCreator[rndItem].CreateInsection();
+            //var insection = insectionCreator[rndItem].CreateInsection();
+
+            var factory = new SpiderFactory();
+            var insection = factory.CreateSpider();
             insection.Events.Subscribe(State.Dead, this);
 
             int CountSpawnPoints = spawnPoints.Position.Length;
             rndItem = rnd.Next(spawnPoints.Position.Length);
-            insection.transform.position = spawnPoints.Position[rndItem].transform.position;
-            insection.transform.parent = insectionsHolder;
+            //insection.transform.position = spawnPoints.Position[rndItem].transform.position;
+           // insection.transform.parent = insectionsHolder;
             currentNumber++;
             OnChangeCount?.Invoke(currentNumber);
 
