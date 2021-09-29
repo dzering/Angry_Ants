@@ -3,13 +3,13 @@ using UnityEngine.AI;
 
 public abstract class EnemyBase : MonoBehaviour
 {
-    public EventManager events;
+    public EventManager Events;
     private NavMeshAgent navMeshAgent;
     IEnemyAI enemyAI;
 
     private void Start()
     {
-        events = new EventManager();
+        Events = new EventManager();
         navMeshAgent = GetComponent<NavMeshAgent>();
         enemyAI = new EnemyAI(transform, navMeshAgent);
         enemyAI.Move();
@@ -17,7 +17,7 @@ public abstract class EnemyBase : MonoBehaviour
 
     public void Dies()
     {
-        events.Notify(State.Dead);
+        Events.Notify(State.Dead);
         Destroy(gameObject);
     }
 }

@@ -9,35 +9,26 @@ public class GameManager : MonoBehaviour
     //[SerializeField] ScoreView scoreView;
     ////
 
-    [SerializeField] Text scoreText;
+    [SerializeField] ScoreView scoreText;
     [SerializeField] ScoreView bugsNumberText;
 
     SpawnController spawnController;
     Camera mainCamera;
-
-    Score bugsNumber;
-    Score score;
 
     private void Start()
     {
         mainCamera = Camera.main;
         spawnController = GetComponent<SpawnController>();
 
+        var scoreNumberModel = new ScoreModel(0);
+        var scoreNumberVM = new ScoreViewModel(scoreNumberModel);
+        bugsNumberText.Initialize(scoreNumberVM);
+        spawnController.OnChangeCount += scoreNumberVM.UpdateState;
+
         var scoreModel = new ScoreModel(0);
         var scoreViewModel = new ScoreViewModel(scoreModel);
-        bugsNumberText.Initialize(scoreViewModel);
-
-        spawnController.OnChangeCount += scoreViewModel.UpdateState;
-        // bugsNumber = new Score(bugsNumberText);
-        // spawnController.OnChangeCount += bugsNumber.UpdateCountText;
-
-
-        ////MVVM test
-        //ScoreModel scoreModel = new ScoreModel(0);
-        //ScoreViewModel scoreViewModel = new ScoreViewModel(scoreModel);
-        //scoreView.Initialize(scoreViewModel);
-        //spawnController.OnChangeCount += scoreViewModel.UpdateState;
-        ////
+        scoreText.Initialize(scoreViewModel);
+        spawnController.OnChangeScore += scoreViewModel.UpdateState;
     }
 
     private void Update()

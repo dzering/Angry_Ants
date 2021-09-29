@@ -2,10 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-internal class SpawnController : MonoBehaviour
+internal class SpawnController : MonoBehaviour, IObserver
 {
 
     public System.Action<int> OnChangeCount;
+    public System.Action<int> OnChangeScore;
+
+    int score;
+    int Score
+    {
+        get { return score; }
+        set { score = value; OnChangeScore(score); }
+    }
+
     InsectionCreator[] insectionCreator;
     SpawnPoints spawnPoints;
     Transform insectionsHolder;
@@ -44,6 +53,7 @@ internal class SpawnController : MonoBehaviour
  
             int rndItem = rnd.Next(insectionCreator.Length);
             var insection = insectionCreator[rndItem].CreateInsection();
+            insection.Events.Subscribe(State.Dead, this);
 
             int CountSpawnPoints = spawnPoints.Position.Length;
             rndItem = rnd.Next(spawnPoints.Position.Length);
@@ -54,7 +64,15 @@ internal class SpawnController : MonoBehaviour
 
             yield return new WaitForSeconds(timeBetwenSpawn);
         }
+    }
 
+    void Scoring()
+    {
+        Score++;
+    }
 
+    public void ChangeState()
+    {
+        Scoring();
     }
 }
