@@ -1,23 +1,20 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-internal sealed class Score : IObserver
+internal sealed class Score
 {
     Text scoreText;
-    int Number { get; set; }
+    string startText;
 
     public Score(Text text)
     {
         scoreText = text;
+        startText = text.text;
     }
 
-    public void ChangeState() { 
-        Count();
+    public void UpdateCountText(int count)
+    {
+        scoreText.text = startText + count;
     }
 
-    public void Count()
-    {  
-        scoreText.text = scoreText.text + $"{ Number}"; 
-    }
-    
 }

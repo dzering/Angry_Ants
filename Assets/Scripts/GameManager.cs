@@ -5,15 +5,30 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] Text scoreText;
+    ////MVVM test
+    //[SerializeField] ScoreView scoreView;
+    ////
+
+    [SerializeField] ScoreView scoreText;
+    [SerializeField] ScoreView bugsNumberText;
+
+    SpawnController spawnController;
     Camera mainCamera;
-    IObserver score;
 
     private void Start()
     {
         mainCamera = Camera.main;
-        score = new Score(scoreText);
-        // Реализовать подписку в Спаунере, при создании каждого насекомого.
+        spawnController = GetComponent<SpawnController>();
+
+        var scoreNumberModel = new ScoreModel(0);
+        var scoreNumberVM = new ScoreViewModel(scoreNumberModel);
+        bugsNumberText.Initialize(scoreNumberVM);
+        spawnController.OnChangeCount += scoreNumberVM.UpdateState;
+
+        var scoreModel = new ScoreModel(0);
+        var scoreViewModel = new ScoreViewModel(scoreModel);
+        scoreText.Initialize(scoreViewModel);
+        spawnController.OnChangeScore += scoreViewModel.UpdateState;
     }
 
     private void Update()
@@ -29,7 +44,7 @@ public class GameManager : MonoBehaviour
     {
         if (Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition), out var hit, Mathf.Infinity))
         {
-            if (hit.collider.TryGetComponent<InsectionBase>(out var p))
+            if (hit.collider.TryGetComponent<EnemyBase>(out var p))
             {
                 p.Dies();
             }

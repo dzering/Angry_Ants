@@ -4,7 +4,7 @@ using UnityEngine;
 
 internal class BugCreator : InsectionCreator
 {
-    public override InsectionBase CreateInsection()
+    public override EnemyBase CreateInsection()
     {
         var bug = Object.Instantiate(Resources.Load<Bug>("Insections/Bug"));
         return bug;
