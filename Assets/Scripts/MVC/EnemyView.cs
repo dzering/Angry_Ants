@@ -4,37 +4,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyView : MonoBehaviour, IEnemyView
+public class EnemyView : MonoBehaviour
 {
-    NavMeshAgent NavMeshAgent;
-    Transform TransformPosition;
+    private IEnemyViewModel enemyViewModel;
 
-    public Vector3 Position { set => transform.position = value; }
-
-    public event EventHandler<EnemyClickedEventArgs> OnClicked = (sender, e) =>{};
-
-    private void Start()
+    public void Initialize(IEnemyViewModel enemyViewModel)
     {
-        NavMeshAgent = GetComponent<NavMeshAgent>();
-        TransformPosition = transform;
+        this.enemyViewModel = enemyViewModel;
+       // enemyViewModel.OnHpChange += DoThomthing;
     }
-
-    private void Update()
+    
+    void Action()
     {
         if (Input.GetMouseButtonDown(0))
         {
-
-            Action();
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out var hit, Mathf.Infinity))
+            {
+               if(hit.collider.TryGetComponent<EnemyView>)
+            }
         }
-    }
 
-    void Action()
-    {
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out var hit, Mathf.Infinity) && hit.transform == transform)
-        {
-            var eventArg = new EnemyClickedEventArgs();
-            OnClicked(this, eventArg);
-        }
     }
 
 }

@@ -6,26 +6,11 @@ using UnityEngine.AI;
 
 public class EnemyModel : IEnemyModel
 {
-    public Vector3 position;
-    public Vector3 Position { get { return position; } set {if(position != value) position = value; var eventArgs = new EnemyPositionChangedEventArgs();
-            OnChangePosition(this, eventArgs);
-        } }
-
-    public event EventHandler<EnemyPositionChangedEventArgs> OnChangePosition = (sender, e) => { };
-
-    public EventManager Events;
-        IEnemyAI enemyAI;
-
-        public EnemyModel(EventManager eventManager, IEnemyAI enemyAI)
+    public float MaxHP { get; }
+    public float CurrentHP { get; set; } 
+    public EnemyModel(float maxHP)
     {
-        Events = eventManager;
-        this.enemyAI = enemyAI;
+        MaxHP = maxHP;
+        CurrentHP = MaxHP;
     }
-
-
-
-    public void Dies()
-        {
-            Events.Notify(State.Dead);
-        }
 }

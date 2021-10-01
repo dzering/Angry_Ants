@@ -5,8 +5,8 @@ using UnityEngine;
 
 public interface IEnemyModel
 {
-    event EventHandler<EnemyPositionChangedEventArgs> OnChangePosition;
-    Vector3 Position { get; set; }
+    float MaxHP { get; }
+    float CurrentHP { get; set; }
 
 
 }
