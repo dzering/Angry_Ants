@@ -7,23 +7,23 @@ using UnityEngine.AI;
 public class EnemyView : MonoBehaviour
 {
     private IEnemyViewModel enemyViewModel;
+    private IEnemyAI enemyAI;
+    EventManager e;
 
     public void Initialize(IEnemyViewModel enemyViewModel)
     {
         this.enemyViewModel = enemyViewModel;
-       // enemyViewModel.OnHpChange += DoThomthing;
+        enemyViewModel.OnHpChange += GetDamage;
+        enemyAI = new EnemyAI(transform, GetComponent<NavMeshAgent>());
+        e = new EventManager();
     }
-    
-    void Action()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out var hit, Mathf.Infinity))
-            {
-               if(hit.collider.TryGetComponent<EnemyView>)
-            }
-        }
 
+    
+    public void GetDamage(float damage)
+    {
+
+        enemyViewModel.ApplyDamage(damage);
     }
+
 
 }
