@@ -7,11 +7,11 @@ using UnityEngine.AI;
 public class EnemyViewModel : IEnemyViewModel
 {
     private bool isDead;
+    //public event Action<bool> OnDead;
+    public event Action<float> OnHpChange;
     public IEnemyModel enemyModel { get; }
 
     public bool IsDead => isDead;
-
-    public event Action<float> OnHpChange;
 
     public EnemyViewModel(IEnemyModel enemyModel)
     {
@@ -24,7 +24,8 @@ public class EnemyViewModel : IEnemyViewModel
         if(enemyModel.CurrentHP <= 0)
         {
             isDead = true;
+            OnHpChange?.Invoke(enemyModel.CurrentHP);
         }
-        OnHpChange?.Invoke(enemyModel.CurrentHP);
+
     }
 }

@@ -1,18 +1,15 @@
 ﻿using UnityEngine;
 public class SpiderFactoryBase
 {
-    public EnemyModel CreateSpider()
+
+    public EnemyView CreateSpider_()
     {
-        var item = Resources.Load<GameObject>("Insections/Spider");
-        var spider = Object.Instantiate(item);
-        var navMesh = spider.GetComponent<NavMeshAgent>();
-        Transform t = spider.transform;
-        EnemyAI enemyAI = new EnemyAI(t, navMesh);
+        var item = Resources.Load<EnemyView>("Insections/Spider");
+        var spider = GameObject.Instantiate(item);
 
-        EventManager e = new EventManager();
-        EnemyModel s = new EnemyModel(e, enemyAI);
-        EnemyViewModel ec = new EnemyViewModel(spider.GetComponent<EnemyView>(), s);
+        spider.Initialize(new EnemyViewModel(new EnemyModel(10)));
 
-        return s;
+
+        return spider;
     }
 }
