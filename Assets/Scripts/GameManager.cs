@@ -29,9 +29,6 @@ public class GameManager : MonoBehaviour
         var scoreViewModel = new ScoreViewModel(scoreModel);
         scoreText.Initialize(scoreViewModel);
         spawnController.OnChangeScore += scoreViewModel.UpdateState;
-
-        SpiderFactoryBase factory = new SpiderFactoryBase();
-        factory.CreateSpider_();
     }
 
     private void Update()
@@ -49,7 +46,7 @@ public class GameManager : MonoBehaviour
         {
             if (hit.collider.TryGetComponent<EnemyBase>(out var p))
             {
-                p.Dies();
+                p.Death(0);
             }
         }
     }

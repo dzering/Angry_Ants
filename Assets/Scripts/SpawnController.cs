@@ -15,7 +15,7 @@ internal class SpawnController : MonoBehaviour, IObserver
         set { score = value; OnChangeScore(score); }
     }
 
-    InsectionCreator[] insectionCreator;
+    EnemyFactory[] insectionCreator;
     SpawnPoints spawnPoints;
     Transform insectionsHolder;
 
@@ -27,16 +27,17 @@ internal class SpawnController : MonoBehaviour, IObserver
     void Start()
     {
         currentNumber = 0;
-        var factories = Object.Instantiate(Resources.Load("Factories/InsectionsCreator"));
-        insectionCreator = Object.FindObjectsOfType<InsectionCreator>();
+        //var factories = Object.Instantiate(Resources.Load("Factories/InsectionsCreator"));
+        //insectionCreator = Object.FindObjectsOfType<EnemyFactory>();
 
         var p = Object.Instantiate(Resources.Load("Spawns/SpawnPoints"));
         spawnPoints = Object.FindObjectOfType<SpawnPoints>();
 
-        if (insectionCreator != null)
-        {
-            StartCoroutine(Spawn());
-        }
+        //if (insectionCreator != null)
+        //{
+        //    StartCoroutine(Spawn());
+        //}
+        StartCoroutine(Spawn());
     }
 
     IEnumerator Spawn()
@@ -48,20 +49,20 @@ internal class SpawnController : MonoBehaviour, IObserver
         }
 
         var rnd = new System.Random();
+        var factory = new SpiderFactory();
         while (currentNumber < maxNumber)
         {
  
-            int rndItem = rnd.Next(insectionCreator.Length);
+            //int rndItem = rnd.Next(insectionCreator.Length);
             //var insection = insectionCreator[rndItem].CreateInsection();
-
-           // var factory = new SpiderFactory();
+           var spider = factory.CreateInsection();
            // var insection = factory.CreateSpider();
            // insection.Events.Subscribe(State.Dead, this);
 
-            int CountSpawnPoints = spawnPoints.Position.Length;
-            rndItem = rnd.Next(spawnPoints.Position.Length);
-            //insection.transform.position = spawnPoints.Position[rndItem].transform.position;
-           // insection.transform.parent = insectionsHolder;
+            int countSpawnPoints = spawnPoints.Position.Length;
+            var rndItem = rnd.Next(spawnPoints.Position.Length);
+            spider.transform.position = spawnPoints.Position[rndItem].transform.position;
+            spider.transform.parent = insectionsHolder;
             currentNumber++;
             OnChangeCount?.Invoke(currentNumber);
 

@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
-public class SpiderFactoryBase
+internal sealed class SpiderFactory : EnemyFactory
 {
 
-    public EnemyView CreateSpider_()
+    public override EnemyBase CreateInsection()
     {
         var item = Resources.Load<EnemyView>("Insections/Spider");
         var spider = GameObject.Instantiate(item);

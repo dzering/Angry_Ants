@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyView : MonoBehaviour
+public class EnemyView : EnemyBase
 {
     private IEnemyViewModel enemyViewModel;
     private IEnemyAI enemyAI;
@@ -13,7 +13,7 @@ public class EnemyView : MonoBehaviour
     public void Initialize(IEnemyViewModel enemyViewModel)
     {
         this.enemyViewModel = enemyViewModel;
-        enemyViewModel.OnHpChange += GetDamage;
+        enemyViewModel.OnHpChange += Death;
         enemyAI = new EnemyAI(transform, GetComponent<NavMeshAgent>());
         e = new EventManager();
     }
@@ -21,8 +21,12 @@ public class EnemyView : MonoBehaviour
     
     public void GetDamage(float damage)
     {
-
         enemyViewModel.ApplyDamage(damage);
+    }
+
+    public override void Death(float damage)
+    {
+        gameObject.SetActive(!enemyViewModel.IsDead);
     }
 
 
