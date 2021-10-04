@@ -5,7 +5,7 @@ using UnityEngine;
 public interface IScoreViewModel
 {
     IScoreModel ScoreModel { get; }
-    event System.Action<int> OnChangeText;
-    void UpdateState(int value);
+    event System.Action<int> OnChange;
+    void UpdateData(int value);
     
 }

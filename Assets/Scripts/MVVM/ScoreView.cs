@@ -16,12 +16,12 @@ public class ScoreView : MonoBehaviour
     public void Initialize(IScoreViewModel scoreViewModel)
     {
         this.scoreViewModel = scoreViewModel;
-        scoreViewModel.OnChangeText += TextUpdate;
+        scoreViewModel.OnChange += TextUpdate;
     }
 
     public void OnChange(int count)
     {
-        scoreViewModel.UpdateState(count);
+        scoreViewModel.UpdateData(count);
     }
 
     void TextUpdate(int count)
@@ -31,6 +31,6 @@ public class ScoreView : MonoBehaviour
 
     ~ScoreView()
     {
-        scoreViewModel.OnChangeText -= OnChange;
+        scoreViewModel.OnChange -= TextUpdate;
     }
 }

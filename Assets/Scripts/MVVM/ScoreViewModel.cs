@@ -7,15 +7,15 @@ public class ScoreViewModel : IScoreViewModel
 {
     public IScoreModel ScoreModel { get; set; }
 
-    public event Action<int> OnChangeText;
+    public event Action<int> OnChange;
 
-    public ScoreViewModel(IScoreModel score)
+    public ScoreViewModel(IScoreModel scoreModel)
     {
-        ScoreModel = score;
+        ScoreModel = scoreModel; 
     }
-    public void UpdateState(int count)
+    public void UpdateData(int count)
     {
         ScoreModel.CurrentCount = count;
-        OnChangeText?.Invoke(ScoreModel.CurrentCount);
+        OnChange?.Invoke(ScoreModel.CurrentCount);
     }
 }

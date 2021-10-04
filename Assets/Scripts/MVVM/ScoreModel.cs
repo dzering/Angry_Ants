@@ -5,8 +5,8 @@ using UnityEngine;
 public class ScoreModel : IScoreModel
 {
     public int CurrentCount { get; set; }
-    public ScoreModel(int count)
+    public ScoreModel(int value)
     {
-        CurrentCount = count;
+        CurrentCount = value;
     }
 }

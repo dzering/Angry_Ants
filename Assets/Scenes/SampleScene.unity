@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.45095676, g: 0.4993227, b: 0.566344, a: 1}
+  m_IndirectSpecularColor: {r: 0.45095676, g: 0.4993227, b: 0.5663441, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -435,8 +435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ccfbf06376459941acd49a83fbb8831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 1196009219}
-  bugsNumberText: {fileID: 452914044}
+  scoreCount: {fileID: 1196009219}
+  enemyCount: {fileID: 452914044}
 --- !u!4 &803129843
 Transform:
   m_ObjectHideFlags: 0

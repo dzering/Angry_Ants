@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] ScoreView scoreText;
-    [SerializeField] ScoreView bugsNumberText;
+    [SerializeField] ScoreView scoreCount;
+    [SerializeField] ScoreView enemyCount;
 
     SpawnController spawnController;
     Camera mainCamera;
@@ -16,10 +16,10 @@ public class GameManager : MonoBehaviour
         mainCamera = Camera.main;
         spawnController = GetComponent<SpawnController>();
 
-        bugsNumberText.Initialize(new ScoreViewModel(new ScoreModel(0)));
-        scoreText.Initialize(new ScoreViewModel(new ScoreModel(0)));
-        spawnController.OnChangeCountEnemy += bugsNumberText.OnChange;
-        spawnController.OnChangeScorePlayer += scoreText.OnChange;
+        enemyCount.Initialize(new ScoreViewModel(new ScoreModel(0)));
+        scoreCount.Initialize(new ScoreViewModel(new ScoreModel(0)));
+        spawnController.OnChangeCountEnemy += enemyCount.OnChange;
+        spawnController.OnChangeScorePlayer += scoreCount.OnChange;
     }
 
     private void Update()

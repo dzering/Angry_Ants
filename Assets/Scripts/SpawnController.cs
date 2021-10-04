@@ -4,8 +4,8 @@ using UnityEngine;
 
 internal class SpawnController : MonoBehaviour, IObserver
 {
-    public System.Action<int> OnChangeCountEnemy;
-    public System.Action<int> OnChangeScorePlayer;
+    public event System.Action<int> OnChangeCountEnemy;
+    public event System.Action<int> OnChangeScorePlayer;
 
     int scorePlayer;
     int ScorePlayer
