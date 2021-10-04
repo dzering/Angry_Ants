@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviour
 
         bugsNumberText.Initialize(new ScoreViewModel(new ScoreModel(0)));
         scoreText.Initialize(new ScoreViewModel(new ScoreModel(0)));
-        spawnController.OnChangeCount += bugsNumberText.OnChange;
-        spawnController.OnChangeScore += scoreText.OnChange;
+        spawnController.OnChangeCountEnemy += bugsNumberText.OnChange;
+        spawnController.OnChangeScorePlayer += scoreText.OnChange;
     }
 
     private void Update()

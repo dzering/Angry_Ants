@@ -4,18 +4,17 @@ using UnityEngine;
 
 internal class SpawnController : MonoBehaviour, IObserver
 {
+    public System.Action<int> OnChangeCountEnemy;
+    public System.Action<int> OnChangeScorePlayer;
 
-    public System.Action<int> OnChangeCount;
-    public System.Action<int> OnChangeScore;
-
-    int score;
-    int Score
+    int scorePlayer;
+    int ScorePlayer
     {
-        get { return score; }
-        set { score = value; OnChangeScore(score); }
+        get { return scorePlayer; }
+        set { scorePlayer = value; OnChangeScorePlayer(scorePlayer); }
     }
 
-    EnemyFactory[] insectionCreator;
+    //EnemyFactory[] insectionCreator;
     SpawnPoints spawnPoints;
     Transform insectionsHolder;
 
@@ -52,19 +51,21 @@ internal class SpawnController : MonoBehaviour, IObserver
         var factory = new SpiderFactory();
         while (currentNumber < maxNumber)
         {
- 
+
             //int rndItem = rnd.Next(insectionCreator.Length);
             //var insection = insectionCreator[rndItem].CreateInsection();
-           var spider = factory.CreateInsection();
-           // var insection = factory.CreateSpider();
-           // insection.Events.Subscribe(State.Dead, this);
+            // var insection = factory.CreateSpider();
+            // insection.Events.Subscribe(State.Dead, this);
+
+            var spider = factory.CreateInsection();
+            spider.EventM.Subscribe(State.Dead, this);
 
             int NumberOfSpawnPoints = spawnPoints.Position.Length;
             var rndItem = rnd.Next(spawnPoints.Position.Length);
             spider.transform.position = spawnPoints.Position[rndItem].transform.position;
             spider.transform.parent = insectionsHolder;
             currentNumber++;
-            OnChangeCount?.Invoke(currentNumber);
+            OnChangeCountEnemy?.Invoke(currentNumber);
 
             yield return new WaitForSeconds(timeBetwenSpawn);
         }
@@ -72,7 +73,7 @@ internal class SpawnController : MonoBehaviour, IObserver
 
     void Scoring()
     {
-        Score++;
+        ScorePlayer++;
     }
 
     public void ChangeState()
