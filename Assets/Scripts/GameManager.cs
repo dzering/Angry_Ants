@@ -18,13 +18,13 @@ public class GameManager : MonoBehaviour
 
         enemyCount.Initialize(new ScoreViewModel(new ScoreModel(0)));
         scoreCount.Initialize(new ScoreViewModel(new ScoreModel(0)));
-        spawnController.OnChangeCountEnemy += enemyCount.OnChange;
-        spawnController.OnChangeScorePlayer += scoreCount.OnChange;
+        spawnController.OnChangeCountEnemy += enemyCount.UpdateChanges;
+        spawnController.OnChangeScorePlayer += scoreCount.UpdateChanges;
     }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0)) Action();
+        //if (Input.GetMouseButtonDown(0)) Action();
     }
 
     void Action()

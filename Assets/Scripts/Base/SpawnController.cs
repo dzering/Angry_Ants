@@ -7,35 +7,27 @@ internal class SpawnController : MonoBehaviour, IObserver
     public event System.Action<int> OnChangeCountEnemy;
     public event System.Action<int> OnChangeScorePlayer;
 
-    int scorePlayer;
-    int ScorePlayer
-    {
-        get { return scorePlayer; }
-        set { scorePlayer = value; OnChangeScorePlayer(scorePlayer); }
-    }
 
-    //EnemyFactory[] insectionCreator;
     SpawnPoints spawnPoints;
     Transform insectionsHolder;
 
     [SerializeField] int maxNumber;
     [SerializeField] float timeBetwenSpawn;
-    int currentNumber;
+
+    int killedEnemiesNumber;
+    int currentEnemiesNumber;
     float currentTime;
+    public int KilledEnemiesNumber
+    {
+        get { return killedEnemiesNumber; }
+        set { killedEnemiesNumber = value; OnChangeScorePlayer(killedEnemiesNumber); }
+    }
 
     void Start()
     {
-        currentNumber = 0;
-        //var factories = Object.Instantiate(Resources.Load("Factories/InsectionsCreator"));
-        //insectionCreator = Object.FindObjectsOfType<EnemyFactory>();
-
+        currentEnemiesNumber = 0;
         var p = Object.Instantiate(Resources.Load("Spawns/SpawnPoints"));
         spawnPoints = Object.FindObjectOfType<SpawnPoints>();
-
-        //if (insectionCreator != null)
-        //{
-        //    StartCoroutine(Spawn());
-        //}
         StartCoroutine(Spawn());
     }
 
@@ -49,14 +41,8 @@ internal class SpawnController : MonoBehaviour, IObserver
 
         var rnd = new System.Random();
         var factory = new SpiderFactory();
-        while (currentNumber < maxNumber)
+        while (currentEnemiesNumber < maxNumber)
         {
-
-            //int rndItem = rnd.Next(insectionCreator.Length);
-            //var insection = insectionCreator[rndItem].CreateInsection();
-            // var insection = factory.CreateSpider();
-            // insection.Events.Subscribe(State.Dead, this);
-
             var spider = factory.CreateInsection();
             spider.EventM.Subscribe(State.Dead, this);
 
@@ -64,8 +50,8 @@ internal class SpawnController : MonoBehaviour, IObserver
             var rndItem = rnd.Next(spawnPoints.Position.Length);
             spider.transform.position = spawnPoints.Position[rndItem].transform.position;
             spider.transform.parent = insectionsHolder;
-            currentNumber++;
-            OnChangeCountEnemy?.Invoke(currentNumber);
+            currentEnemiesNumber++;
+            OnChangeCountEnemy?.Invoke(currentEnemiesNumber);
 
             yield return new WaitForSeconds(timeBetwenSpawn);
         }
@@ -73,10 +59,12 @@ internal class SpawnController : MonoBehaviour, IObserver
 
     void Scoring()
     {
-        ScorePlayer++;
+        KilledEnemiesNumber++;
+        currentEnemiesNumber--;
+        OnChangeCountEnemy?.Invoke(currentEnemiesNumber);
     }
 
-    public void ChangeState()
+    public void UpdateState()
     {
         Scoring();
     }

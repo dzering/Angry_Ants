@@ -19,9 +19,9 @@ public class ScoreView : MonoBehaviour
         scoreViewModel.OnChange += TextUpdate;
     }
 
-    public void OnChange(int count)
+    public void UpdateChanges(int count)
     {
-        scoreViewModel.UpdateData(count);
+        scoreViewModel.UpdateModel(count);
     }
 
     void TextUpdate(int count)

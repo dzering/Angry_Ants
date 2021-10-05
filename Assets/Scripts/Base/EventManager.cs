@@ -38,7 +38,7 @@ public class EventManager : ISubject
     public void Notify(State eventType)
     {
         Listeners.TryGetValue(eventType, out List<IObserver> listeners);
-        if(listeners != null) foreach (var listener in listeners) listener.ChangeState();
+        if(listeners != null) foreach (var listener in listeners) listener.UpdateState();
         //foreach (var listener in listeners)
         //{
         //    listener.ChangeState();

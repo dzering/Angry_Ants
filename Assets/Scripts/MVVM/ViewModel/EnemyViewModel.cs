@@ -7,7 +7,6 @@ using UnityEngine.AI;
 public class EnemyViewModel : IEnemyViewModel
 {
     private bool isDead;
-    //public event Action<bool> OnDead;
     public event Action<float> OnHpChange;
     public IEnemyModel enemyModel { get; }
 
