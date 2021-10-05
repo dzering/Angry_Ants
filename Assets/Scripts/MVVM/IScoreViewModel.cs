@@ -6,6 +6,6 @@ public interface IScoreViewModel
 {
     IScoreModel ScoreModel { get; }
     event System.Action<int> OnChange;
-    void UpdateData(int value);
+    void UpdateModel(int value);
     
 }

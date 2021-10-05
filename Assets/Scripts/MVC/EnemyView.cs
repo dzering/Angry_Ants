@@ -14,7 +14,7 @@ public class EnemyView : EnemyBase
         this.enemyViewModel = enemyViewModel;
         enemyViewModel.OnHpChange += Death;
         enemyAI = new EnemyAI(transform, GetComponent<NavMeshAgent>());
-        EventM = new EventManager();
+        events = new EventManager();
     }
 
     
@@ -25,7 +25,7 @@ public class EnemyView : EnemyBase
 
     public override void Death(float damage)
     {
-        EventM.Notify(State.Dead);
+        events.Notify(State.Dead);
         gameObject.SetActive(!enemyViewModel.IsDead);
     }
 

@@ -15,11 +15,11 @@ C:/Users/svigo/MyGitProject/Angry_Ants
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57422
+51536
 Successfully changed project path to: C:/Users/svigo/MyGitProject/Angry_Ants
 C:/Users/svigo/MyGitProject/Angry_Ants
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 81.72 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 79.25 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.0f1 (61a549675243)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,62 +35,104 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56876
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001740 seconds.
+Registered in 0.001407 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 90.74 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 72.92 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.346 seconds
+- Completed reload, in  0.963 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002876 seconds.
+Registered in 0.002364 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.294 seconds
+- Completed reload, in  0.919 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 2.41 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 117.2 MB.
 System memory in use after: 117.4 MB.
 
 Unloading 88 unused Assets to reduce memory usage. Loaded Objects now: 3537.
-Total: 5.160400 ms (FindLiveObjects: 0.455100 ms CreateObjectMapping: 0.314900 ms MarkObjects: 4.038900 ms  DeleteObjects: 0.349400 ms)
+Total: 7.645500 ms (FindLiveObjects: 0.722600 ms CreateObjectMapping: 0.638100 ms MarkObjects: 6.139500 ms  DeleteObjects: 0.143300 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Resources/Spawns/SpawnPoints.prefab
-  artifactKey: Guid(b30dc68122210474da7d978e66090c04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Spawns/SpawnPoints.prefab using Guid(b30dc68122210474da7d978e66090c04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '501cf9a19cf24a260eab160149e374ef') in 0.075048 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.787895 seconds.
   path: Assets/Scripts/SpawnController.cs
   artifactKey: Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/SpawnController.cs using Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3346d6a95902b0ee6aa5df62290a80ca') in 0.017526 seconds 
+Start importing Assets/Scripts/SpawnController.cs using Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '847422338166e01577a07b1f77247f71') in 0.040274 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 404.752146 seconds.
+  Time since last request: 42.470988 seconds.
   path: Assets/Scripts/SpawnController.cs
   artifactKey: Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/SpawnController.cs using Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d41d70d86910060ba2ae00c657ad427') in 0.003437 seconds 
+Start importing Assets/Scripts/SpawnController.cs using Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81e0681c2d952367e70f835718a2d2d9') in 0.003925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 85.462832 seconds.
+  path: Assets/Scripts/SpawnController.cs
+  artifactKey: Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnController.cs using Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf1ac64d69602ff449f7a968088f1ee2') in 0.002812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 101.023909 seconds.
+  path: Assets/Scripts/SpawnController.cs
+  artifactKey: Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnController.cs using Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9613ee77c12c6be22c0cd34fdc20495') in 0.004492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.210245 seconds.
+  path: Assets/Scripts/SpawnController.cs
+  artifactKey: Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnController.cs using Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fbd0bd3816acd499c1716897e242524') in 0.003880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 81.471970 seconds.
+  path: Assets/Scripts/SpawnController.cs
+  artifactKey: Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnController.cs using Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32dd15a8fa2d14ccaea75eed6e845c41') in 0.003702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 92.178040 seconds.
+  path: Assets/Scripts/SpawnController.cs
+  artifactKey: Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnController.cs using Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c15fbe7bb3976b46fcc1c0c2f0f72a') in 0.003972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.495552 seconds.
+  path: Assets/Scripts/SpawnController.cs
+  artifactKey: Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnController.cs using Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e93df5c185981c5782c7fdfc495e86') in 0.002616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 50.540986 seconds.
+  path: Assets/Scripts/SpawnController.cs
+  artifactKey: Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnController.cs using Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ff184929790dfa25c13c328e4302ee6') in 0.003591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.779493 seconds.
+  path: Assets/Scripts/SpawnController.cs
+  artifactKey: Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnController.cs using Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d1d847444250564756cae0d3f5b6510') in 0.004276 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002499 seconds.
+Registered in 0.003397 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -102,24 +144,24 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.932 seconds
+- Completed reload, in  0.788 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.94 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3058 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 115.2 MB.
-System memory in use after: 115.3 MB.
+System memory in use after: 115.4 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3540.
-Total: 8.625000 ms (FindLiveObjects: 0.667600 ms CreateObjectMapping: 0.368000 ms MarkObjects: 7.447400 ms  DeleteObjects: 0.139900 ms)
+Total: 2.506600 ms (FindLiveObjects: 0.261700 ms CreateObjectMapping: 0.164900 ms MarkObjects: 2.018400 ms  DeleteObjects: 0.059900 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003393 seconds.
+Registered in 0.003183 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -131,15 +173,84 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.059 seconds
+- Completed reload, in  0.813 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 1.30 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3058 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 115.2 MB.
 System memory in use after: 115.4 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3543.
-Total: 8.270900 ms (FindLiveObjects: 0.634900 ms CreateObjectMapping: 0.579600 ms MarkObjects: 6.895800 ms  DeleteObjects: 0.157300 ms)
+Total: 2.292200 ms (FindLiveObjects: 0.282400 ms CreateObjectMapping: 0.142500 ms MarkObjects: 1.819700 ms  DeleteObjects: 0.046800 ms)
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 897.533426 seconds.
+  path: Assets/Scripts/SpawnController.cs
+  artifactKey: Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnController.cs using Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a440f29ce96390fbe3d3e3794c09a61') in 0.006476 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002271 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.823 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3058 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 115.3 MB.
+System memory in use after: 115.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3546.
+Total: 3.978700 ms (FindLiveObjects: 0.637100 ms CreateObjectMapping: 0.255300 ms MarkObjects: 2.978000 ms  DeleteObjects: 0.106300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 79.330622 seconds.
+  path: Assets/Scripts/SpawnController.cs
+  artifactKey: Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpawnController.cs using Guid(a8d4a30d772604f4f8e320e98aab93ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4685c0df30e223a7461ff414d68ad626') in 0.006029 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002590 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.772 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3058 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 115.3 MB.
+System memory in use after: 115.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3549.
+Total: 2.693600 ms (FindLiveObjects: 0.335200 ms CreateObjectMapping: 0.186100 ms MarkObjects: 2.104700 ms  DeleteObjects: 0.066500 ms)
+

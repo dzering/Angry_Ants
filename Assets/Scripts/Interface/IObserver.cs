@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IObserver
 {
-    void ChangeState();
+    void UpdateState();
 }
