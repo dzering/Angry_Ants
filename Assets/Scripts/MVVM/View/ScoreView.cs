@@ -19,7 +19,7 @@ public class ScoreView : MonoBehaviour
         scoreViewModel.OnChange += TextUpdate;
     }
 
-    public void GetUpdate(int count)
+    public void UpdateChanges(int count)
     {
         scoreViewModel.UpdateModel(count);
     }
