@@ -403,7 +403,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1751480294}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 24, y: -35.4, z: 0}
 --- !u!1 &803129841
 GameObject:
@@ -449,7 +449,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1751480294}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &803129844
 MonoBehaviour:
@@ -463,6 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8d4a30d772604f4f8e320e98aab93ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enemies: []
   maxNumber: 5
   timeBetwenSpawn: 5
 --- !u!1 &813799092
@@ -561,8 +562,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 100
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -590,7 +591,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1751480294}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1115909504
 GameObject:
@@ -882,7 +883,7 @@ Transform:
   m_Children:
   - {fileID: 46023285}
   m_Father: {fileID: 1751480294}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1624745964
 MonoBehaviour:
@@ -925,10 +926,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1115909508}
+  - {fileID: 1624745963}
   - {fileID: 803129843}
   - {fileID: 963194228}
   - {fileID: 705507995}
-  - {fileID: 1624745963}
   - {fileID: 1154834051}
   m_Father: {fileID: 0}
   m_RootOrder: 0

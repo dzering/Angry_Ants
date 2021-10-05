@@ -29,5 +29,13 @@ public class EnemyView : EnemyBase
         gameObject.SetActive(!enemyViewModel.IsDead);
     }
 
+    public override string ToString()
+    {
+        return base.ToString();
+    }
 
+    public override void Move()
+    {
+        enemyAI.Move();
+    }
 }

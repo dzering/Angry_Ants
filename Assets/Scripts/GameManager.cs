@@ -24,14 +24,9 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        //if (Input.GetMouseButtonDown(0)) Action();
-    }
-
-    void Action()
-    {
-        if (Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition), out var hit, Mathf.Infinity))
+        foreach (var item in spawnController.Enemies)
         {
-            if (hit.collider.TryGetComponent<EnemyBase>(out var p)) p.Death(0);
+            item.Move();
         }
     }
 }

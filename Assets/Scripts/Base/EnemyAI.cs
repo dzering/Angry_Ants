@@ -4,40 +4,39 @@ using UnityEngine.AI;
 public class EnemyAI : IEnemyAI
 {
     Transform transform;
-    NavMeshAgent navMeshAgent;
+    NavMeshAgent agent;
     Vector3 boundsGameField;
-    Vector3 destinationPoint;
+
     Vector3 targetPoint;
 
     public EnemyAI(Transform transform, NavMeshAgent navMeshAgent)
     {
-        this.navMeshAgent = navMeshAgent;
+        this.agent = navMeshAgent;
         this.transform = transform;
-        boundsGameField = MapGeneration.GetBounds();
+        boundsGameField = MapGeneration.BoundsField;
 
         targetPoint = GetRandomPoint();
-        navMeshAgent.destination = targetPoint;
-        destinationPoint = navMeshAgent.destination;
+        agent.destination = targetPoint;
     }
 
     public void Move()
     {
-        if(Vector3.Distance(transform.position, destinationPoint) < 0.3f)
+        if(Vector3.Distance(transform.position, targetPoint) <= 1f)
         {
-            FindPath();
+            NextPointToMove();
         }
     }
 
-    void FindPath()
+    void NextPointToMove()
     {
         targetPoint = GetRandomPoint();
-        destinationPoint = targetPoint;
+        agent.destination = targetPoint;
     }
 
     Vector3 GetRandomPoint()
     {
         int xRandom = (int)Random.Range(-boundsGameField.x, boundsGameField.x);
-        int zRandom = (int)Random.Range(-boundsGameField.y, boundsGameField.y);
+        int zRandom = (int)Random.Range(-boundsGameField.z, boundsGameField.z);
 
         return new Vector3(xRandom, 0, zRandom);
     }

@@ -7,7 +7,7 @@ internal class SpawnController : MonoBehaviour, IObserver
     public event System.Action<int> OnChangeCountEnemy;
     public event System.Action<int> OnChangeScorePlayer;
 
-
+    public List<EnemyBase> Enemies;
     SpawnPoints spawnPoints;
     Transform insectionsHolder;
 
@@ -25,6 +25,7 @@ internal class SpawnController : MonoBehaviour, IObserver
 
     void Start()
     {
+        Enemies = new List<EnemyBase>();
         currentEnemiesNumber = 0;
         var p = Object.Instantiate(Resources.Load("Spawns/SpawnPoints"));
         spawnPoints = Object.FindObjectOfType<SpawnPoints>();
@@ -44,7 +45,8 @@ internal class SpawnController : MonoBehaviour, IObserver
         while (currentEnemiesNumber < maxNumber)
         {
             var spider = factory.CreateInsection();
-            spider.EventM.Subscribe(State.Dead, this);
+            spider.events.Subscribe(State.Dead, this);
+            Enemies.Add(spider);
 
             int NumberOfSpawnPoints = spawnPoints.Position.Length;
             var rndItem = rnd.Next(spawnPoints.Position.Length);
