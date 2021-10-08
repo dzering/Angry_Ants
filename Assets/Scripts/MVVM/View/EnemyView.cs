@@ -8,6 +8,7 @@ public class EnemyView : EnemyBase
 {
     private IEnemyViewModel enemyViewModel;
     private IEnemyAI enemyAI;
+    private Animator animator;
 
     public void Initialize(IEnemyViewModel enemyViewModel)
     {
