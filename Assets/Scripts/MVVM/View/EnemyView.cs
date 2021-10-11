@@ -9,16 +9,19 @@ public class EnemyView : EnemyBase
     private IEnemyViewModel enemyViewModel;
     private IEnemyAI enemyAI;
     private Animator animator;
+    private NavMeshAgent agent;
 
     public void Initialize(IEnemyViewModel enemyViewModel)
     {
+        animator = GetComponent<Animator>();
         this.enemyViewModel = enemyViewModel;
         enemyViewModel.OnHpChange += Death;
-        enemyAI = new EnemyAI(transform, GetComponent<NavMeshAgent>());
+        agent = GetComponent<NavMeshAgent>();
+        enemyAI = new EnemyAI(transform, agent);
         events = new EventManager();
     }
 
-    
+
     public void GetDamage(float damage)
     {
         enemyViewModel.ApplyDamage(damage);
@@ -38,5 +41,6 @@ public class EnemyView : EnemyBase
     public override void Move()
     {
         enemyAI.Move();
+        animator.SetFloat("Speed", agent.velocity.magnitude);
     }
 }

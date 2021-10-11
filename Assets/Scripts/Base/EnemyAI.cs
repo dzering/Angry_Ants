@@ -7,10 +7,12 @@ public class EnemyAI : IEnemyAI
     NavMeshAgent agent;
     Vector3 boundsGameField;
 
+
     Vector3 targetPoint;
 
     public EnemyAI(Transform transform, NavMeshAgent navMeshAgent)
     {
+
         this.agent = navMeshAgent;
         this.transform = transform;
         boundsGameField = MapGeneration.BoundsField;
