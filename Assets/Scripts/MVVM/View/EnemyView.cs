@@ -6,6 +6,7 @@ using UnityEngine.AI;
 
 public class EnemyView : EnemyBase
 {
+    [SerializeField] ParticleSystem deathEffect;
     private IEnemyViewModel enemyViewModel;
     private IEnemyAI enemyAI;
     private Animator animator;
@@ -30,7 +31,9 @@ public class EnemyView : EnemyBase
     public override void Death(float damage)
     {
         events.Notify(State.Dead);
+        Destroy(Instantiate(deathEffect.gameObject, transform.position, Quaternion.identity), deathEffect.main.startLifetime.constantMax);
         gameObject.SetActive(!enemyViewModel.IsDead);
+        
     }
 
     public override string ToString()
