@@ -196,3 +196,4 @@ Received Import Request.
   path: Assets/Shaders/BloodShader.shadergraph
   artifactKey: Guid(2a730ecd0450ef848ac03cad3b171c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Shaders/BloodShader.shadergraph using Guid(2a730ecd0450ef848ac03cad3b171c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5953b63d484226c5a52f39b624640293') in 0.010507 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
