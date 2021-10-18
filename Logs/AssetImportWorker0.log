@@ -15,11 +15,11 @@ C:/Голубев/MyProjects/Bugs/Angry_Ants
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56066
+49387
 Successfully changed project path to: C:/Голубев/MyProjects/Bugs/Angry_Ants
 C:/Голубев/MyProjects/Bugs/Angry_Ants
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 200.44 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 267.71 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.0f1 (61a549675243)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/Resources/UnitySubsystems
@@ -36,123 +36,369 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56720
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004276 seconds.
+Registered in 0.003411 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 196.77 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 272.08 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.522 seconds
+- Completed reload, in  3.398 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006032 seconds.
+Registered in 0.010131 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 245.90 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 276.20 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.487 seconds
+- Completed reload, in  3.522 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 2.01 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 2.17 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 188.3 MB.
-System memory in use after: 188.4 MB.
+Unloading 5132 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.7 MB.
+System memory in use after: 204.1 MB.
 
-Unloading 115 unused Assets to reduce memory usage. Loaded Objects now: 5054.
-Total: 5.668000 ms (FindLiveObjects: 0.623200 ms CreateObjectMapping: 0.258200 ms MarkObjects: 4.332900 ms  DeleteObjects: 0.451100 ms)
+Unloading 117 unused Assets to reduce memory usage. Loaded Objects now: 5581.
+Total: 8.031500 ms (FindLiveObjects: 1.285400 ms CreateObjectMapping: 0.712300 ms MarkObjects: 5.565800 ms  DeleteObjects: 0.464800 ms)
 
 ========================================================================
 Received Import Request.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e0a6c1a29fc90996f5c956ba7035081') in 0.058819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 86.022164 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a9840bf4b6d50950ff37dfb2bf079a4') in 0.012722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.794860 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d4a4e83c6bded2b075d7a5b396831f') in 0.008642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 491.550630 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd10cbe03a8ebc724d22164ec3796d1e1') in 0.008446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 57.590047 seconds.
   path: Assets/Shaders/BloodShader.shadergraph
-  artifactKey: Guid(2a730ecd0450ef848ac03cad3b171c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/BloodShader.shadergraph using Guid(2a730ecd0450ef848ac03cad3b171c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f690457707fba80845c2564a66944d2') in 0.062635 seconds 
+  artifactKey: Guid(cd8ce41ddbcd1a44397d39c145fa8d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/BloodShader.shadergraph using Guid(cd8ce41ddbcd1a44397d39c145fa8d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cf08d17c42c23a3e75951ee188503ac') in 0.019098 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 73.315407 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat
-  artifactKey: Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat using Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57086363b8ddab5d4ecc22841f98a7f8') in 0.490055 seconds 
+  Time since last request: 6091.924275 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd0567695bd6f3bea8851bf8775de19c') in 0.096074 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 31.710951 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/Particles/ParticlesUnlit.shader
-  artifactKey: Guid(0406db5a14f94604a8c57ccfbc9f3b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/Particles/ParticlesUnlit.shader using Guid(0406db5a14f94604a8c57ccfbc9f3b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '735695d48c547a2eb45cea54b7d46e0b') in 0.010593 seconds 
+  Time since last request: 65.355559 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c1a985c9353951a1a5523e9e69cf785') in 0.010854 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 39.535251 seconds.
-  path: Assets/Materials/BloodShader.mat
-  artifactKey: Guid(fd50627f1368ab94d8250f8f1d42a343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/BloodShader.mat using Guid(fd50627f1368ab94d8250f8f1d42a343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2205c1c05386e0e0adb2026d45c8fa00') in 0.038567 seconds 
+  Time since last request: 22.675198 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f730a9c6ae5203592e568dd9e3425c80') in 0.028751 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3358.004015 seconds.
-  path: Assets/Prefabs/Enemy Death Effect.prefab
-  artifactKey: Guid(ad6be157657fdb14cb4c05414ad6cb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy Death Effect.prefab using Guid(ad6be157657fdb14cb4c05414ad6cb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3576a0345ad5050567f4c86ae264b718') in 0.127781 seconds 
+  Time since last request: 95.274951 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd997d3182f62a50dad3f3077437fca67') in 0.008691 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 60.222651 seconds.
-  path: Assets/Prefabs/Resources/Insections/Spider.prefab
-  artifactKey: Guid(472f23daa38eaa747af7a8b73c58bfbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Resources/Insections/Spider.prefab using Guid(472f23daa38eaa747af7a8b73c58bfbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c0ae503e33e3eef6b40c85d92c136aa') in 0.159637 seconds 
+  Time since last request: 362.756104 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80939f31d10034a83185444cfba9af25') in 0.011993 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 40.031566 seconds.
-  path: Assets/External Assets/fantasySpider/spider_01_Bump.png
-  artifactKey: Guid(bcb3badb2fbbab945884956cd41659ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External Assets/fantasySpider/spider_01_Bump.png using Guid(bcb3badb2fbbab945884956cd41659ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5104201da2b23290147b48def28ea499') in 0.069897 seconds 
+  Time since last request: 218.948105 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd733cc51d4c3caadc75e034285ce0f83') in 0.009715 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10573.334723 seconds.
-  path: Assets/Shaders/NewUnlitShader.shader
-  artifactKey: Guid(3b02425dab9317542ab1183b7391afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/NewUnlitShader.shader using Guid(3b02425dab9317542ab1183b7391afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b029c112bd086fd4b871c2981549f5') in 0.247564 seconds 
+  Time since last request: 26.273254 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8af7c8a97f553dc8ddf204c50215baca') in 0.013400 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.692547 seconds.
-  path: Assets/Shaders/InvisibleShader.shader
-  artifactKey: Guid(3b02425dab9317542ab1183b7391afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/InvisibleShader.shader using Guid(3b02425dab9317542ab1183b7391afea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5e0f2c503593c86bed9a2008307beac') in 0.051207 seconds 
+  Time since last request: 21.903087 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9b53f602a4a54b0cfcbb12cf99fcf42') in 0.011607 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 327.480339 seconds.
-  path: Assets/Shaders/BloodShader.shadergraph
-  artifactKey: Guid(2a730ecd0450ef848ac03cad3b171c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/BloodShader.shadergraph using Guid(2a730ecd0450ef848ac03cad3b171c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5a87be7fa4691cf926ac4409e472ce1') in 0.022219 seconds 
+  Time since last request: 1366.088094 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32fc57caf8eadc42f3fd649384a3e323') in 0.009651 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 85.875459 seconds.
-  path: Assets/Shaders/BloodShader.shadergraph
-  artifactKey: Guid(2a730ecd0450ef848ac03cad3b171c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/BloodShader.shadergraph using Guid(2a730ecd0450ef848ac03cad3b171c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c605bb585139e00fc9331d5a5b87eb72') in 0.013785 seconds 
+  Time since last request: 123.250141 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf6a496a6c4ab09f808a65444e39a256') in 0.016355 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 156.918549 seconds.
-  path: Assets/Shaders/BloodShader.shadergraph
-  artifactKey: Guid(2a730ecd0450ef848ac03cad3b171c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/BloodShader.shadergraph using Guid(2a730ecd0450ef848ac03cad3b171c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd54e8f0624667e5c263c51d8e2849b9c') in 0.012847 seconds 
+  Time since last request: 89.578818 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c43ada2b8acc1ee2c417e368596dc32') in 0.011289 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 200.943389 seconds.
-  path: Assets/Shaders/BloodSplash.tga
-  artifactKey: Guid(7fb43b0f136b67a4abd4b230faca546c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/BloodSplash.tga using Guid(7fb43b0f136b67a4abd4b230faca546c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b88e947434392d2ba7e47276e4f737d8') in 0.209425 seconds 
+  Time since last request: 186.924842 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c342facd57025b53b0a6ecf79435bad4') in 0.015880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.512095 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e3c696b2853f67043dd41c0656a1291') in 0.014658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 71.548562 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '149fd97ad017b0a9be5cb9c62bdea03c') in 0.012889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.941696 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5195793eec1aba4ccc34be6c401d9275') in 0.011250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.990406 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c64435dd026be898063174ccab2598') in 0.014939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.478795 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64e06b21f22bb86f79b2858e5c687f0c') in 0.014182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 62.664972 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96f6f9034032f3eaad3cb9df2a4c48bd') in 0.016393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.258209 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5ce21a2338236a21b82ad6520fd1b56') in 0.015313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.273652 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a772306f52545bb4da2a932fd8b84ecc') in 0.015952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.811072 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bae1d7aa049a6d1d32d53645d38e8b62') in 0.017179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.462953 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b786575b85c507bfbd535794fcbad08d') in 0.019088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.222266 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d6ae3c5ac1ec801c3c32d4449eb23c') in 0.014875 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.286345 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8324f8b8d5728eda928b8d5ea9c9759a') in 0.014078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.761825 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1507b5a0f7a0b10ebaf967fe21e11f4') in 0.012209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.295388 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33894310fc823391064dcd4f0a707aab') in 0.018966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.240265 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e4e8e452baa053304c408ba91a135aa') in 0.016633 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 66.908151 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc15600e3c1b160b91c0e87f0b9ab8a4') in 0.009728 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 219.182721 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbe8345f2646699eb3e6a83e1a10f709') in 0.009190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.561389 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23c6efa2f6048b9798b9dd914022a605') in 0.015692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.413679 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eddc05d1f555739adc2c512b5b4981c') in 0.013839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 90.630425 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '634fc78ee4448a080715ce7c2c5ad7fd') in 0.012186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 67.313714 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '542f52cd3c60116a86ff5bbf39d01602') in 0.018397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 285.992262 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '996a91205b286906d34ff61315891c18') in 0.017083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 310.697822 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4945892039a52128f21e300c29475f82') in 0.060050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 193.168079 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d01222d7bf6f4c5658df8a27ca4afc8') in 0.020229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.364485 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9420cbebc956ac4da8e24acdd1d602e') in 0.014915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.976310 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f42e45f238dfc33650e9d485da81eaf') in 0.014600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.484032 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22da3b2683a83c31c87e2d4826e45d16') in 0.015100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.929893 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dddf2a3af18c58019cdbd7bc5e551903') in 0.013969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.257160 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c8988dfff8cd948fe501aa757606875') in 0.012231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.485756 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c3b6b01d6aa412aa59141cfdf217c1b') in 0.081478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 107.200332 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d9eb5fcd3dc0ff0b41bf0a0b5af4b5f') in 0.010638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.408711 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a89aa2b88d09d046bc2386874931e82') in 0.010601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 136.721802 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0628d8b407b1a02c1759ef8370858ecb') in 0.017110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 99.534112 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e463dd949abeba1e14ec04dd835e7670') in 0.063934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 74.400727 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.vfx
+  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '679d1d34c6718dbbc66ab80d8709ab19') in 0.014592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 77.646343 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.prefab
+  artifactKey: Guid(2a26269f3c747a04f80d9d2f1fe02972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.prefab using Guid(2a26269f3c747a04f80d9d2f1fe02972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d702cccfe6ba5c9d19fa8dc8fdf530') in 0.273237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.796505 seconds.
+  path: Assets/Prefabs/Vfxgraph_Blood.prefab
+  artifactKey: Guid(2a26269f3c747a04f80d9d2f1fe02972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Vfxgraph_Blood.prefab using Guid(2a26269f3c747a04f80d9d2f1fe02972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf3b3bd480dac5da9dad5533c3d577a9') in 0.023431 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.168700 seconds.
+Registered in 0.007680 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 210.23 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 2.14 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -164,286 +410,256 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  3.011 seconds
+- Completed reload, in  2.557 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.78 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.85 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5030 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 219.2 MB.
-System memory in use after: 219.5 MB.
+Unloading 5023 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 196.4 MB.
+System memory in use after: 196.8 MB.
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 5690.
-Total: 8.740800 ms (FindLiveObjects: 0.719400 ms CreateObjectMapping: 0.299000 ms MarkObjects: 7.429200 ms  DeleteObjects: 0.289500 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 5584.
+Total: 9.192800 ms (FindLiveObjects: 1.521600 ms CreateObjectMapping: 0.901000 ms MarkObjects: 6.456500 ms  DeleteObjects: 0.307900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 685.986606 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '676625f20684574b92fe03b3f61be26e') in 0.055914 seconds 
+  Time since last request: 443.416014 seconds.
+  path: Assets/Prefabs/Resources/Insections/Spider.prefab
+  artifactKey: Guid(472f23daa38eaa747af7a8b73c58bfbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Resources/Insections/Spider.prefab using Guid(472f23daa38eaa747af7a8b73c58bfbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74d25550be1d666a92061920be192c73') in 0.514759 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006024 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.423 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5023 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 216.5 MB.
+System memory in use after: 216.9 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 5634.
+Total: 7.917500 ms (FindLiveObjects: 0.911000 ms CreateObjectMapping: 0.353700 ms MarkObjects: 6.412900 ms  DeleteObjects: 0.237200 ms)
+
 ========================================================================
 Received Import Request.
-  Time since last request: 63.783150 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1669cc7edb25d0af9300c81ee40af61') in 0.012875 seconds 
+  Time since last request: 21.686282 seconds.
+  path: Assets/Prefabs/Resources/Insections/Spider.prefab
+  artifactKey: Guid(472f23daa38eaa747af7a8b73c58bfbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Resources/Insections/Spider.prefab using Guid(472f23daa38eaa747af7a8b73c58bfbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '566fc79576756af2217afd8a13a1c9e2') in 0.439288 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008067 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.719 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5023 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 216.6 MB.
+System memory in use after: 217.0 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 5673.
+Total: 7.667100 ms (FindLiveObjects: 0.948900 ms CreateObjectMapping: 0.447500 ms MarkObjects: 6.081000 ms  DeleteObjects: 0.187100 ms)
+
 ========================================================================
 Received Import Request.
-  Time since last request: 90.625144 seconds.
+  Time since last request: 112.763079 seconds.
   path: Assets/Prefabs/Vfxgraph_Blood.vfx
   artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32287490c4a2f9c3ac26848caf276a4d') in 0.017541 seconds 
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5275b409d7e08e0f86ee0e66a5a8efda') in 0.038560 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 47.977508 seconds.
+  Time since last request: 245.000818 seconds.
   path: Assets/Prefabs/Vfxgraph_Blood.vfx
   artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b626955137883bfa6880fa4575a24fe') in 0.017045 seconds 
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a351311513a7f3d048b178c471b0b86d') in 0.014320 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.765062 seconds.
+  Time since last request: 13.016742 seconds.
   path: Assets/Prefabs/Vfxgraph_Blood.vfx
   artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01166df659ad267b5c3d4a63c4bb0354') in 0.022049 seconds 
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '822dc379b73139c6ffaeef29bc612552') in 0.012635 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.522876 seconds.
+  Time since last request: 54.142619 seconds.
   path: Assets/Prefabs/Vfxgraph_Blood.vfx
   artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7566f614d199af1a0aeddc0c160187ad') in 0.030508 seconds 
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76e9bc43aacc82049e4b952eed2a7aa3') in 0.015426 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007758 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.294 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.17 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5023 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 216.5 MB.
+System memory in use after: 216.9 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 5676.
+Total: 8.036400 ms (FindLiveObjects: 0.742800 ms CreateObjectMapping: 0.444400 ms MarkObjects: 6.594100 ms  DeleteObjects: 0.251600 ms)
+
 ========================================================================
 Received Import Request.
-  Time since last request: 9.507541 seconds.
+  Time since last request: 202.561463 seconds.
   path: Assets/Prefabs/Vfxgraph_Blood.vfx
   artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb2f83ad06a83907d24eca5e630bd617') in 0.090037 seconds 
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90857626d963b86ca7b3b770695a4ed1') in 0.040796 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008468 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.448 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5023 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 216.3 MB.
+System memory in use after: 216.7 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 5679.
+Total: 9.183500 ms (FindLiveObjects: 1.015200 ms CreateObjectMapping: 0.890900 ms MarkObjects: 7.044000 ms  DeleteObjects: 0.230100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007025 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.338 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5023 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 216.5 MB.
+System memory in use after: 216.9 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 5682.
+Total: 6.241700 ms (FindLiveObjects: 0.943800 ms CreateObjectMapping: 0.345800 ms MarkObjects: 4.762800 ms  DeleteObjects: 0.186000 ms)
+
 ========================================================================
 Received Import Request.
-  Time since last request: 1658.367097 seconds.
+  Time since last request: 463.759024 seconds.
   path: Assets/Prefabs/Vfxgraph_Blood.vfx
   artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2ea8859282fc805d5dd27cbf8fb41f8') in 0.132626 seconds 
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d441fb20c30dd5235ada88632b3f53e') in 0.026284 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.762266 seconds.
+  Time since last request: 151.928974 seconds.
   path: Assets/Prefabs/Vfxgraph_Blood.vfx
   artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5697a4b8d85cf70781fe57104b94509a') in 0.017084 seconds 
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dd175f40a7afd582393d2fc3e86c755') in 0.017171 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 572.396591 seconds.
+  Time since last request: 27.607040 seconds.
   path: Assets/Prefabs/Vfxgraph_Blood.vfx
   artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a9079a1d2b064e2810cdcd5776c8c4') in 0.023905 seconds 
+Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e42d7c2615bc033558f3f0db19c32595') in 0.015940 seconds 
 ========================================================================
-Received Import Request.
-  Time since last request: 49.437152 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f1b1b6b85b8514b992ae2c02f35c61b') in 0.027943 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 523.439051 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '446dbb15000fca24910aee6b0bfa35e4') in 0.015232 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.932738 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd5150ff44306e14f4800b4504b5fb5') in 0.016642 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 53.967663 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acd9f03965b890cf9fb5d42aa9d2a418') in 0.014021 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.881424 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1947e750c762da1c12682f7763b00b6') in 0.015483 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 311.951670 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd944cc2cc8864c30286c17bc4ed6600f') in 0.018934 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.442248 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81b543142188e7f17074b5582eaab3b3') in 0.017598 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.799062 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeabcc3af91c7c95b427b1770a67b6d9') in 0.023878 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.773074 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96763b00b4fabb37ae7c6058ba583077') in 0.019212 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.339926 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0725bb251420387e6df4b0d6a88563a') in 0.042864 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1027.136055 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb8f30618f4cc5961d423b566f34de6') in 0.018476 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 245.576932 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ec3bef603710e1ac595d06f488d87b') in 0.019378 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.509258 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b65e24bd0a124168ab97dc9b17257e3') in 0.029210 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.996791 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e25a86d7d0019a533093bf5aaeddac37') in 0.019877 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.969437 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d3d0610de99820facf12f3cd6d6832b') in 0.016179 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 43.940095 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ce786b4bb6215bafb23f51d8e05f02') in 0.015137 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 54.558077 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c99ba181e26d2c820619b446baae691') in 0.017321 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.949214 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fe870af95cdffde03f16ee1238e4560') in 0.028311 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.342612 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da12edd3a1b204bdbcbae4a9eb567145') in 0.016333 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.762770 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12fbc79adf3f673ba482b832c1e98d97') in 0.017948 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.888959 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe17557c9eb3e66784b70680ca16fc60') in 0.019317 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 310.514310 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b9a84e59b01c5b391fbcb47c7e13a2a') in 0.014166 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.024836 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87bbb34f6c7fa1f83d5d2fc756485fa3') in 0.024525 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 387.290978 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a43a75b337199b3dde91e5b860da1cca') in 0.019474 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.731076 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9034b4b4d09e9b12256e928cead1341') in 0.018845 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 906.259755 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bba78b67d7f3b9d7c0fce882b4dfe541') in 0.016157 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 101.173948 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '543191e6fbbca36b49f7a39a2ab1191f') in 0.013863 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 48.021697 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53425063cf6b7b9f567ad35447c69b4e') in 0.016552 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.227868 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f608b8d26769ee30c082f2a7799f4a35') in 0.018236 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 194.178438 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd198cf22099b44065c7c2b7dafcf2f55') in 0.017154 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 107.990020 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a9980723f9b9f263a9303076194db5c') in 0.017295 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 138.349926 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '409a32f0c32ca3c20dfd26580a07d137') in 0.014892 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 48.840480 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1513c944ba6a67fc24323db30214839f') in 0.023689 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.648141 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f73183c67bfe737027f07173a8646fef') in 0.016695 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.585206 seconds.
-  path: Assets/Prefabs/Vfxgraph_Blood.vfx
-  artifactKey: Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Vfxgraph_Blood.vfx using Guid(55b80397caf28d843b16de97de9d13be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b9c8a4b6cfef1766b2b86ddad0967ff') in 0.014401 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006648 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.380 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5023 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 216.6 MB.
+System memory in use after: 217.0 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 5685.
+Total: 7.619900 ms (FindLiveObjects: 0.726400 ms CreateObjectMapping: 0.344100 ms MarkObjects: 6.357300 ms  DeleteObjects: 0.189300 ms)
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

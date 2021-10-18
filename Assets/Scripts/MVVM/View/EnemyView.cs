@@ -1,12 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Experimental;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.VFX;
 
 public class EnemyView : EnemyBase
 {
     [SerializeField] ParticleSystem deathEffect;
+    [SerializeField] VisualEffect deathVFX;
     private IEnemyViewModel enemyViewModel;
     private IEnemyAI enemyAI;
     private Animator animator;
@@ -31,7 +34,7 @@ public class EnemyView : EnemyBase
     public override void Death(float damage)
     {
         events.Notify(State.Dead);
-        Destroy(Instantiate(deathEffect.gameObject, transform.position, Quaternion.identity), deathEffect.main.startLifetime.constantMax);
+        Destroy(Instantiate(deathVFX.gameObject, transform.position, Quaternion.identity), deathEffect.main.startLifetime.constantMax);
         gameObject.SetActive(!enemyViewModel.IsDead);
         
     }

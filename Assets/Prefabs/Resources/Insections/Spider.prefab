@@ -2198,6 +2198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 1285965996685457657, guid: ad6be157657fdb14cb4c05414ad6cb55, type: 3}
+  deathVFX: {fileID: 4330701757625840588, guid: 2a26269f3c747a04f80d9d2f1fe02972, type: 3}
 --- !u!65 &-2416635049813432190
 BoxCollider:
   m_ObjectHideFlags: 0
