@@ -1,19 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
+using MVVM.View;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+namespace Base
 {
-    public float damage = 10;
-    private void Update()
+    public class Player : MonoBehaviour
     {
-        if (Input.GetMouseButtonDown(0))
+        public float damage = 10;
+        private void Update()
         {
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out var hit, Mathf.Infinity))
+            if (Input.GetMouseButtonDown(0))
             {
-               if(hit.collider.TryGetComponent<EnemyView>(out var enemy))
+                if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out var hit, Mathf.Infinity))
                 {
-                    enemy.GetDamage(damage);
+                    if(hit.collider.TryGetComponent<EnemyView>(out var enemy))
+                    {
+                        enemy.GetDamage(damage);
+                    }
                 }
             }
         }

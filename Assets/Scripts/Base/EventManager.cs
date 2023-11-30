@@ -1,47 +1,49 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using Enum;
+using Interface;
 
-public class EventManager : ISubject
+namespace Base
 {
-    public Dictionary<State, List<IObserver>> Listeners;
-    public EventManager()
+    public class EventManager : ISubject
     {
-        Listeners = new Dictionary<State, List<IObserver>>();
-    }
-
-    public void Subscribe(State eventType, IObserver listener)
-    {
-        if (!Listeners.ContainsKey(eventType))
+        public Dictionary<State, List<IObserver>> Listeners;
+        public EventManager()
         {
-            Listeners.Add(eventType, new List<IObserver>());
-            if(Listeners.TryGetValue(eventType, out List<IObserver> value))
+            Listeners = new Dictionary<State, List<IObserver>>();
+        }
+
+        public void Subscribe(State eventType, IObserver listener)
+        {
+            if (!Listeners.ContainsKey(eventType))
             {
+                Listeners.Add(eventType, new List<IObserver>());
+                if(Listeners.TryGetValue(eventType, out List<IObserver> value))
+                {
+                    value.Add(listener);
+                }
+            }
+            else
+            {
+                Listeners.TryGetValue(eventType, out List<IObserver> value);
                 value.Add(listener);
             }
+        
         }
-        else
+
+        public void Unsubscribe(State eventType, IObserver listener)
         {
             Listeners.TryGetValue(eventType, out List<IObserver> value);
-            value.Add(listener);
+            value.Remove(listener);
         }
-        
-    }
 
-    public void Unsubscribe(State eventType, IObserver listener)
-    {
-        Listeners.TryGetValue(eventType, out List<IObserver> value);
-        value.Remove(listener);
-    }
-
-    public void Notify(State eventType)
-    {
-        Listeners.TryGetValue(eventType, out List<IObserver> listeners);
-        if(listeners != null) foreach (var listener in listeners) listener.UpdateState();
-        //foreach (var listener in listeners)
-        //{
-        //    listener.ChangeState();
-        //}
+        public void Notify(State eventType)
+        {
+            Listeners.TryGetValue(eventType, out List<IObserver> listeners);
+            if(listeners != null) foreach (var listener in listeners) listener.UpdateState();
+            //foreach (var listener in listeners)
+            //{
+            //    listener.ChangeState();
+            //}
+        }
     }
 }

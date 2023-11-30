@@ -1,8 +1,11 @@
 
 
-public enum State
+namespace Enum
 {
-    Dead,
-    Alive,
-    Collision
+    public enum State
+    {
+        Dead,
+        Alive,
+        Collision
+    }
 }

@@ -1,12 +1,10 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public interface IEnemyModel
+namespace MVVM.Interface
 {
-    float MaxHP { get; }
-    float CurrentHP { get; set; }
+    public interface IEnemyModel
+    {
+        float MaxHP { get; }
+        float CurrentHP { get; set; }
 
 
+    }
 }

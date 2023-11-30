@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public interface IScoreViewModel
+namespace MVVM.Interface
 {
-    IScoreModel ScoreModel { get; }
-    event System.Action<int> OnChange;
-    void UpdateModel(int value);
+    public interface IScoreViewModel
+    {
+        IScoreModel ScoreModel { get; }
+        event System.Action<int> OnChange;
+        void UpdateModel(int value);
     
+    }
 }

@@ -1,13 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnPoints : MonoBehaviour
+namespace Base
 {
-    public Transform[] Position;
-
-    private void Start()
+    public class SpawnPoints : MonoBehaviour
     {
+        public Transform[] Position;
+
+        private void Start()
+        {
         
+        }
     }
 }

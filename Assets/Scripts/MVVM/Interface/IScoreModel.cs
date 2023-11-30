@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public interface IScoreModel
+namespace MVVM.Interface
 {
-    int CurrentCount { get; set; }
+    public interface IScoreModel
+    {
+        int CurrentCount { get; set; }
+    }
 }

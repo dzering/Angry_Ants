@@ -1,8 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using Base;
 
-internal abstract class EnemyFactory
+namespace Factories
 {
-    public abstract EnemyBase CreateInsection();
+    internal abstract class EnemyFactory
+    {
+        public abstract EnemyBase CreateInsection();
+    }
 }

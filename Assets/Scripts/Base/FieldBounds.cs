@@ -1,19 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public sealed class FieldBounds 
+namespace Base
 {
-    static Vector3 bounds;
-    readonly Transform gameField;
-
-    public FieldBounds(Transform gameField)
+    public sealed class FieldBounds 
     {
-        this.gameField = gameField;
-    }
+        static Vector3 bounds;
+        readonly Transform gameField;
 
-    static void GetBounds()
-    {
+        public FieldBounds(Transform gameField)
+        {
+            this.gameField = gameField;
+        }
 
+        static void GetBounds()
+        {
+
+        }
     }
 }

@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public interface IEnemyAI
+namespace Interface
 {
-    void Move();
+    public interface IEnemyAI
+    {
+        void Move();
+    }
 }

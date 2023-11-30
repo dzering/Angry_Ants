@@ -1,21 +1,22 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using MVVM.Interface;
 
-public class ScoreViewModel : IScoreViewModel
+namespace MVVM.ViewModel
 {
-    public IScoreModel ScoreModel { get; set; }
-
-    public event Action<int> OnChange;
-
-    public ScoreViewModel(IScoreModel scoreModel)
+    public class ScoreViewModel : IScoreViewModel
     {
-        ScoreModel = scoreModel; 
-    }
-    public void UpdateModel(int count)
-    {
-        ScoreModel.CurrentCount = count;
-        OnChange?.Invoke(ScoreModel.CurrentCount);
+        public IScoreModel ScoreModel { get; set; }
+
+        public event Action<int> OnChange;
+
+        public ScoreViewModel(IScoreModel scoreModel)
+        {
+            ScoreModel = scoreModel; 
+        }
+        public void UpdateModel(int count)
+        {
+            ScoreModel.CurrentCount = count;
+            OnChange?.Invoke(ScoreModel.CurrentCount);
+        }
     }
 }

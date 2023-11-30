@@ -1,16 +1,15 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.AI;
+using MVVM.Interface;
 
-public class EnemyModel : IEnemyModel
+namespace MVVM.Model
 {
-    public float MaxHP { get; }
-    public float CurrentHP { get; set; } 
-    public EnemyModel(float maxHP)
+    public class EnemyModel : IEnemyModel
     {
-        MaxHP = maxHP;
-        CurrentHP = MaxHP;
+        public float MaxHP { get; }
+        public float CurrentHP { get; set; } 
+        public EnemyModel(float maxHP)
+        {
+            MaxHP = maxHP;
+            CurrentHP = MaxHP;
+        }
     }
 }

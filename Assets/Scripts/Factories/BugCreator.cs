@@ -1,12 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
+using Base;
 using UnityEngine;
 
-internal class BugCreator : EnemyFactory
+namespace Factories
 {
-    public override EnemyBase CreateInsection()
+    internal class BugCreator : EnemyFactory
     {
-        var bug = Object.Instantiate(Resources.Load<EnemyBase>("Insections/Bug"));
-        return bug;
+        public override EnemyBase CreateInsection()
+        {
+            var bug = Object.Instantiate(Resources.Load<EnemyBase>("Insections/Bug"));
+            return bug;
+        }
     }
 }

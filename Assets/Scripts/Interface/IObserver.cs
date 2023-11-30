@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public interface IObserver
+namespace Interface
 {
-    void UpdateState();
+    public interface IObserver
+    {
+        void UpdateState();
+    }
 }

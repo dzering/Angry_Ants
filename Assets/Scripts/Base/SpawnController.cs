@@ -1,73 +1,79 @@
 using System.Collections;
 using System.Collections.Generic;
+using Enum;
+using Factories;
+using Interface;
 using UnityEngine;
 
-internal class SpawnController : MonoBehaviour, IObserver
+namespace Base
 {
-    public event System.Action<int> OnChangeCountEnemy;
-    public event System.Action<int> OnChangeScorePlayer;
-
-    public List<EnemyBase> Enemies;
-    SpawnPoints spawnPoints;
-    Transform insectionsHolder;
-
-    [SerializeField] int maxNumber;
-    [SerializeField] float timeBetwenSpawn;
-
-    int killedEnemiesNumber;
-    int currentEnemiesNumber;
-    float currentTime;
-    public int KilledEnemiesNumber
+    internal class SpawnController : MonoBehaviour, IObserver
     {
-        get { return killedEnemiesNumber; }
-        set { killedEnemiesNumber = value; OnChangeScorePlayer(killedEnemiesNumber); }
-    }
+        public event System.Action<int> OnChangeCountEnemy;
+        public event System.Action<int> OnChangeScorePlayer;
 
-    void Start()
-    {
-        Enemies = new List<EnemyBase>();
-        currentEnemiesNumber = 0;
-        var p = Object.Instantiate(Resources.Load("Spawns/SpawnPoints"));
-        spawnPoints = Object.FindObjectOfType<SpawnPoints>();
-        StartCoroutine(Spawn());
-    }
+        public List<EnemyBase> Enemies;
+        SpawnPoints spawnPoints;
+        Transform insectionsHolder;
 
-    IEnumerator Spawn()
-    {
-        string holderName = "Insections";
-        if (!GameObject.Find(holderName))
+        [SerializeField] int maxNumber;
+        [SerializeField] float timeBetwenSpawn;
+
+        int killedEnemiesNumber;
+        int currentEnemiesNumber;
+        float currentTime;
+        public int KilledEnemiesNumber
         {
-            insectionsHolder = new GameObject(holderName).transform;
+            get { return killedEnemiesNumber; }
+            set { killedEnemiesNumber = value; OnChangeScorePlayer(killedEnemiesNumber); }
         }
 
-        var rnd = new System.Random();
-        var factory = new SpiderFactory();
-        while (currentEnemiesNumber < maxNumber)
+        void Start()
         {
-            var spider = factory.CreateInsection();
-            spider.events.Subscribe(State.Dead, this);
-            Enemies.Add(spider);
+            Enemies = new List<EnemyBase>();
+            currentEnemiesNumber = 0;
+            var p = Object.Instantiate(Resources.Load("Spawns/SpawnPoints"));
+            spawnPoints = Object.FindObjectOfType<SpawnPoints>();
+            StartCoroutine(Spawn());
+        }
 
-            int NumberOfSpawnPoints = spawnPoints.Position.Length;
-            var rndItem = rnd.Next(spawnPoints.Position.Length);
-            spider.transform.position = spawnPoints.Position[rndItem].transform.position;
-            spider.transform.parent = insectionsHolder;
-            currentEnemiesNumber++;
+        IEnumerator Spawn()
+        {
+            string holderName = "Insections";
+            if (!GameObject.Find(holderName))
+            {
+                insectionsHolder = new GameObject(holderName).transform;
+            }
+
+            var rnd = new System.Random();
+            var factory = new SpiderFactory();
+            while (currentEnemiesNumber < maxNumber)
+            {
+                var spider = factory.CreateInsection();
+                spider.events.Subscribe(State.Dead, this);
+                Enemies.Add(spider);
+
+                int NumberOfSpawnPoints = spawnPoints.Position.Length;
+                var rndItem = rnd.Next(spawnPoints.Position.Length);
+                spider.transform.position = spawnPoints.Position[rndItem].transform.position;
+                spider.transform.parent = insectionsHolder;
+                currentEnemiesNumber++;
+                OnChangeCountEnemy?.Invoke(currentEnemiesNumber);
+
+                yield return new WaitForSeconds(timeBetwenSpawn);
+            }
+        }
+
+        void Scoring()
+        {
+            KilledEnemiesNumber++;
+            currentEnemiesNumber--;
             OnChangeCountEnemy?.Invoke(currentEnemiesNumber);
-
-            yield return new WaitForSeconds(timeBetwenSpawn);
         }
-    }
 
-    void Scoring()
-    {
-        KilledEnemiesNumber++;
-        currentEnemiesNumber--;
-        OnChangeCountEnemy?.Invoke(currentEnemiesNumber);
-    }
-
-    public void UpdateState()
-    {
-        Scoring();
+        public void UpdateState()
+        {
+            Scoring();
+        }
     }
 }

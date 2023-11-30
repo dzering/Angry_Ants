@@ -1,30 +1,30 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.AI;
+using MVVM.Interface;
 
-public class EnemyViewModel : IEnemyViewModel
+namespace MVVM.ViewModel
 {
-    private bool isDead;
-    public event Action<float> OnHpChange;
-    public IEnemyModel enemyModel { get; }
-
-    public bool IsDead => isDead;
-
-    public EnemyViewModel(IEnemyModel enemyModel)
+    public class EnemyViewModel : IEnemyViewModel
     {
-        this.enemyModel = enemyModel;
-    }
+        private bool isDead;
+        public event Action<float> OnHpChange;
+        public IEnemyModel enemyModel { get; }
 
-    public void ApplyDamage(float damage)
-    {
-        enemyModel.CurrentHP -= damage;
-        if(enemyModel.CurrentHP <= 0)
+        public bool IsDead => isDead;
+
+        public EnemyViewModel(IEnemyModel enemyModel)
         {
-            isDead = true;
-            OnHpChange?.Invoke(enemyModel.CurrentHP);
+            this.enemyModel = enemyModel;
         }
 
+        public void ApplyDamage(float damage)
+        {
+            enemyModel.CurrentHP -= damage;
+            if(enemyModel.CurrentHP <= 0)
+            {
+                isDead = true;
+                OnHpChange?.Invoke(enemyModel.CurrentHP);
+            }
+
+        }
     }
 }

@@ -1,12 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using MVVM.Interface;
 
-public class ScoreModel : IScoreModel
+namespace MVVM.Model
 {
-    public int CurrentCount { get; set; }
-    public ScoreModel(int value)
+    public class ScoreModel : IScoreModel
     {
-        CurrentCount = value;
+        public int CurrentCount { get; set; }
+        public ScoreModel(int value)
+        {
+            CurrentCount = value;
+        }
     }
 }

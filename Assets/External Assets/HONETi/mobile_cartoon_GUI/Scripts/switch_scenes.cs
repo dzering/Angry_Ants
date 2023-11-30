@@ -1,23 +1,25 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
-using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class switch_scenes : MonoBehaviour {
+namespace External_Assets.HONETi.mobile_cartoon_GUI.Scripts
+{
+	public class switch_scenes : MonoBehaviour {
 	
-	public string sceneName = "";
+		public string sceneName = "";
 
-	// Use this for initialization
-	void Start () {
-		Button b = GetComponent<Button> ();
-		if (b != null && sceneName != "")
-		{
-			b.onClick.AddListener(() => {SceneManager.LoadScene(sceneName);});
+		// Use this for initialization
+		void Start () {
+			Button b = GetComponent<Button> ();
+			if (b != null && sceneName != "")
+			{
+				b.onClick.AddListener(() => {SceneManager.LoadScene(sceneName);});
+			}
 		}
-	}
 	
-	// Update is called once per frame
-	void Update () {
+		// Update is called once per frame
+		void Update () {
 	
+		}
 	}
 }

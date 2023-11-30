@@ -1,10 +1,12 @@
-using System;
-using System.Collections.Generic;
+using Enum;
 
-public interface ISubject
+namespace Interface
 {
-    void Subscribe(State eventType, IObserver listener);
-    void Unsubscribe(State eventType, IObserver listener);
+    public interface ISubject
+    {
+        void Subscribe(State eventType, IObserver listener);
+        void Unsubscribe(State eventType, IObserver listener);
 
-    void Notify(State eventType);
+        void Notify(State eventType);
+    }
 }

@@ -1,20 +1,22 @@
-using UnityEngine;
 using UnityEngine.UI;
 
-internal sealed class Score
+namespace UI
 {
-    Text scoreText;
-    string startText;
-
-    public Score(Text text)
+    internal sealed class Score
     {
-        scoreText = text;
-        startText = text.text;
-    }
+        Text scoreText;
+        string startText;
 
-    public void UpdateCountText(int count)
-    {
-        scoreText.text = startText + count;
-    }
+        public Score(Text text)
+        {
+            scoreText = text;
+            startText = text.text;
+        }
 
+        public void UpdateCountText(int count)
+        {
+            scoreText.text = startText + count;
+        }
+
+    }
 }

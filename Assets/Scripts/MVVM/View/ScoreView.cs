@@ -1,36 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
+using MVVM.Interface;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreView : MonoBehaviour
+namespace MVVM.View
 {
-    [SerializeField] Text scoreText;
-    IScoreViewModel scoreViewModel;
-    string startText;
+    public class ScoreView : MonoBehaviour
+    {
+        [SerializeField] Text scoreText;
+        IScoreViewModel scoreViewModel;
+        string startText;
 
-    private void Start()
-    {
-        startText = scoreText.text;
-    }
-    public void Initialize(IScoreViewModel scoreViewModel)
-    {
-        this.scoreViewModel = scoreViewModel;
-        scoreViewModel.OnChange += TextUpdate;
-    }
+        private void Start()
+        {
+            startText = scoreText.text;
+        }
+        public void Initialize(IScoreViewModel scoreViewModel)
+        {
+            this.scoreViewModel = scoreViewModel;
+            scoreViewModel.OnChange += TextUpdate;
+        }
 
-    public void UpdateChanges(int count)
-    {
-        scoreViewModel.UpdateModel(count);
-    }
+        public void UpdateChanges(int count)
+        {
+            scoreViewModel.UpdateModel(count);
+        }
 
-    void TextUpdate(int count)
-    {
-        scoreText.text = startText + count;
-    }
+        void TextUpdate(int count)
+        {
+            scoreText.text = startText + count;
+        }
 
-    ~ScoreView()
-    {
-        scoreViewModel.OnChange -= TextUpdate;
+        ~ScoreView()
+        {
+            scoreViewModel.OnChange -= TextUpdate;
+        }
     }
 }

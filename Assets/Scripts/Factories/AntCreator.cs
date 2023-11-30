@@ -1,13 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
+using Base;
 using UnityEngine;
 
-internal class AntCreator : EnemyFactory
+namespace Factories
 {
-    public override EnemyBase CreateInsection()
+    internal class AntCreator : EnemyFactory
     {
-        var ant = Object.Instantiate(Resources.Load<EnemyBase>("Insections/Ant"));
-        return ant;
-    }
+        public override EnemyBase CreateInsection()
+        {
+            return Object.Instantiate(Resources.Load<EnemyBase>("Insections/Ant"));
+        }
 
+    }
 }
