@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        boundsFieldX = MapGeneration.BoundsField.x - boundsOffset;
+        //boundsFieldX = MapGeneration.BoundsField.x - boundsOffset;
     }
 
 

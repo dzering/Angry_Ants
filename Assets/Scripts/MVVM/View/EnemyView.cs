@@ -4,14 +4,11 @@ using Interface;
 using MVVM.Interface;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.VFX;
 
 namespace MVVM.View
 {
     public class EnemyView : EnemyBase
     {
-        [SerializeField] ParticleSystem deathEffect;
-        [SerializeField] VisualEffect deathVFX;
         private IEnemyViewModel enemyViewModel;
         private IEnemyAI enemyAI;
         private Animator animator;
@@ -36,7 +33,6 @@ namespace MVVM.View
         public override void Death(float damage)
         {
             events.Notify(State.Dead);
-            Destroy(Instantiate(deathVFX.gameObject, transform.position, Quaternion.identity), deathEffect.main.startLifetime.constantMax);
             gameObject.SetActive(!enemyViewModel.IsDead);
         
         }

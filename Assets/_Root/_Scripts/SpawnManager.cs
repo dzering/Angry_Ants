@@ -6,18 +6,27 @@ namespace _Root._Scripts
 {
     public class SpawnManager : MonoBehaviour
     {
-        [SerializeField] private Transform[] spawnPositions;
+        [SerializeField] private GameManager _gameManager;
+        [SerializeField] private Transform[] _spawnPositions;
         public GameObject spawnObject;
-        public bool isGameOver;
+        
         public float spawnRate = 2f;
         private Coroutine _coroutine;
 
-        private void Start() => 
+        public void Start()
+        {
+            _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            RestartGame();
+        }
+
+        private void RestartGame()
+        {
             _coroutine = StartCoroutine(SpawnObject());
+        }
 
         public IEnumerator SpawnObject()
         {
-            while (!isGameOver)
+            while (_gameManager.currentState == GameState.Game)
             {
                 yield return new WaitForSeconds(spawnRate);
                 Transform spawnPoint = GetSpawnPosition();
@@ -26,6 +35,6 @@ namespace _Root._Scripts
         }
 
         private Transform GetSpawnPosition() => 
-            spawnPositions[Random.Range(0, spawnPositions.Length)];
+            _spawnPositions[Random.Range(0, _spawnPositions.Length)];
     }
 }

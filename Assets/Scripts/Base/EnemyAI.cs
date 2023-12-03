@@ -18,7 +18,7 @@ namespace Base
 
             this.agent = navMeshAgent;
             this.transform = transform;
-            boundsGameField = MapGeneration.BoundsField;
+           //boundsGameField = MapGeneration.BoundsField;
 
             targetPoint = GetRandomPoint();
             agent.destination = targetPoint;

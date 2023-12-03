@@ -1,18 +1,19 @@
-using System;
 using UnityEngine;
 
 namespace _Root._Scripts
 {
     public class Target : MonoBehaviour
     {
-        private void OnTriggerEnter(Collider other)
+        private GameManager _gameManager;
+
+        private void Start()
         {
-            if(other.CompareTag("Enemy"))
-                Die();
+            _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         }
 
-        private void Die()
+        public void Die()
         {
+            _gameManager.GameOver();
             Destroy(gameObject);
         }
     }
