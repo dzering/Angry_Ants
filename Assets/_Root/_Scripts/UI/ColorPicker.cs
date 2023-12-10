@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using _Root._Scripts.Logic;
+using _Root._Scripts.Data;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,7 +17,7 @@ namespace _Root._Scripts.UI
         public void Init()
         {
             CreateButtons();
-            SetColor(GameDataManager.instance.teamColor);
+            SetColor(GameDataSingleton.instance.teamColor);
         }
         
         private void CreateButtons()

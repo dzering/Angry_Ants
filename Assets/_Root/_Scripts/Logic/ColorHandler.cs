@@ -1,3 +1,4 @@
+using _Root._Scripts.Data;
 using UnityEngine;
 
 namespace _Root._Scripts.Logic
@@ -14,10 +15,10 @@ namespace _Root._Scripts.Logic
                 rendererObject = GetComponent<Renderer>();
             }
 
-            if (GameDataManager.instance == null)
+            if (GameDataSingleton.instance == null)
                 return;
 
-            var teamColor = GameDataManager.instance.teamColor;
+            var teamColor = GameDataSingleton.instance.teamColor;
 
             MaterialPropertyBlock propertyBlock = new MaterialPropertyBlock();
             propertyBlock.SetColor("_Color", teamColor);

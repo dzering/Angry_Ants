@@ -16,11 +16,11 @@ namespace _Root._Scripts.Game
 
         private void OnMouseDown()
         {
-            if(gameObject.CompareTag("Enemy") && _enemy.gameManager.currentState == GameState.Game)
+            if (gameObject.CompareTag("Enemy") && _enemy.gameManager.currentState == GameState.Game)
             {
                 Instantiate(deathParticleSystem, transform.position, deathParticleSystem.transform.rotation);
                 _enemy.gameManager.UpdateScore(_score);
-                
+
                 Destroy(gameObject);
             }
         }
