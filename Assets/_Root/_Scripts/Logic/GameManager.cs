@@ -36,7 +36,7 @@ namespace _Root._Scripts.Logic
         {
             _score += value;
             _scoreText.text = "Score: " + _score;
-            GameDataSingleton.instance.score = _score;
+            GameDataSingleton.instance.UpdateScore(_score);
         }
 
         public void GameOver()

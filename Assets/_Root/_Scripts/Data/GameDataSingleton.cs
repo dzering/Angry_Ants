@@ -7,7 +7,7 @@ namespace _Root._Scripts.Data
     {
         public Color teamColor;
         public static GameDataSingleton instance;
-        public int score;
+        private int _score;
         public string playerName;
         public BestResult bestResult;
 
@@ -35,10 +35,10 @@ namespace _Root._Scripts.Data
 
         public void SaveBestResult()
         {
-            if(score < bestResult.score)
+            if(_score < bestResult.score)
                 return;
 
-            bestResult.score = score;
+            bestResult.score = _score;
             bestResult.name = playerName;
             string json = JsonUtility.ToJson(bestResult);
             File.WriteAllText(Application.persistentDataPath + "bestPlayer.json", json);
@@ -95,6 +95,11 @@ namespace _Root._Scripts.Data
             string readAllText = File.ReadAllText(path);
             GameData gameData = JsonUtility.FromJson<GameData>(readAllText);
             teamColor = gameData.teamColor;
+        }
+
+        public void UpdateScore(int score)
+        {
+            _score = score;
         }
     }
 }

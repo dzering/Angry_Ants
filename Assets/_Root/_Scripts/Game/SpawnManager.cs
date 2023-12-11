@@ -11,8 +11,9 @@ namespace _Root._Scripts.Game
         [SerializeField] private Transform[] _spawnPositions;
         public GameObject spawnObject;
         
-        public float spawnRate = 2f;
+        public float spawnRate = 3f;
         private Coroutine _coroutine;
+        private int _numberEnemies = 1;
 
         public void Start()
         {
@@ -30,6 +31,15 @@ namespace _Root._Scripts.Game
             while (_gameManager.currentState == GameState.Game)
             {
                 yield return new WaitForSeconds(spawnRate);
+                SpawnEnemies(_numberEnemies);
+                _numberEnemies++;
+            }
+        }
+
+        private void SpawnEnemies(int number)
+        {
+            for (int i = 0; i < number; i++)
+            {
                 Transform spawnPoint = GetSpawnPosition();
                 Instantiate(spawnObject, spawnPoint.position, spawnPoint.rotation);
             }
