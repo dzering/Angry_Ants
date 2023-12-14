@@ -11,14 +11,19 @@ namespace _Root._Scripts.Game
         [SerializeField] private Transform[] _spawnPositions;
         public GameObject spawnObject;
         
-        public float spawnRate = 3f;
         private Coroutine _coroutine;
-        private int _numberEnemies = 1;
+        private DifficultyProperty _difficulty;
 
         public void Start()
         {
-            _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            _difficulty = new DifficultyProperty();
+            _gameManager ??= GameObject.Find("GameManager").GetComponent<GameManager>();
             RestartGame();
+        }
+
+        private void Update()
+        {
+            _difficulty.Execute();
         }
 
         private void RestartGame()
@@ -30,9 +35,8 @@ namespace _Root._Scripts.Game
         {
             while (_gameManager.currentState == GameState.Game)
             {
-                yield return new WaitForSeconds(spawnRate);
-                SpawnEnemies(_numberEnemies);
-                _numberEnemies++;
+                yield return new WaitForSeconds(_difficulty.timeBetweenEnemySpawn);
+                SpawnEnemies(_difficulty.numberOfEnemySpawn);
             }
         }
 
@@ -41,7 +45,9 @@ namespace _Root._Scripts.Game
             for (int i = 0; i < number; i++)
             {
                 Transform spawnPoint = GetSpawnPosition();
-                Instantiate(spawnObject, spawnPoint.position, spawnPoint.rotation);
+                GameObject instantiate = Instantiate(spawnObject, spawnPoint.position, spawnPoint.rotation);
+                Enemy enemy = instantiate.GetComponent<Enemy>();
+                enemy.Construct(_gameManager);
             }
         }
 
