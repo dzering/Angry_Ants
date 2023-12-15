@@ -15,6 +15,11 @@ namespace _Root._Scripts.Game
 
         private void Start()
         {
+            Initialize();
+        }
+
+        private void Initialize()
+        {
             _result = new Collider[1];
             _enemy = GetComponent<Enemy>();
             _animator = GetComponent<Animator>();
@@ -33,7 +38,7 @@ namespace _Root._Scripts.Game
             _animator.SetTrigger("Attack");
         }
 
-        public void AttackPick()
+        public void HittingMomentEvent()
         {
             int nonAlloc = Physics.OverlapSphereNonAlloc(_centerAttackSphere.position, _radius, _result, _layerMask);
             if (nonAlloc > 0)

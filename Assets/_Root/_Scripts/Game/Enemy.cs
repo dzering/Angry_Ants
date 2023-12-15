@@ -8,39 +8,36 @@ namespace _Root._Scripts.Game
     [RequireComponent(typeof(NavMeshAgent))]
     public class Enemy : MonoBehaviour
     {
-        
         [HideInInspector] public GameManager gameManager;
 
         private NavMeshAgent _agent;
-        private GameManager _gameManager;
         private CoverManager _coverManager;
         private CoverInfoData _nextCoverInfo;
         private CoverInfoData _currentCoverInfo;
         private bool _isInCover;
         private float _timeInCover;
-        private readonly float _planingTime = 3f;
+        private readonly float _planingTime = 1f;
         private Vector3 _targetPosition = Vector3.zero;
-        public void Construct(GameManager gameManager) => 
+        public void Construct(GameManager gameManager)
+        {
             this.gameManager = gameManager;
+            _coverManager = GameObject.Find("Covers").GetComponent<CoverManager>();
+            _agent = GetComponent<NavMeshAgent>();
+        }
 
         private void Start()
         {
-            Initialization();
             MoveTo();
         }
 
         private void Update()
         {
-            if (_gameManager.currentState != GameState.Game)
-            {
-                _agent.isStopped = true;
-                Destroy(gameObject);
-            }
+            CheckGameState();
 
             if (_isInCover)
             {
                 _timeInCover += Time.deltaTime;
-                if (_timeInCover > Random.Range(_planingTime, _planingTime + 2))
+                if (_timeInCover > Random.Range(_planingTime, _planingTime + 10f))
                 {
                     _timeInCover = 0;
                     _isInCover = false;
@@ -51,11 +48,19 @@ namespace _Root._Scripts.Game
             }
         }
 
-        private void Initialization()
+        private void OnDestroy()
         {
-            _gameManager = GetComponent<Enemy>().gameManager;
-            _coverManager = GameObject.Find("Covers").GetComponent<CoverManager>();
-            _agent = GetComponent<NavMeshAgent>();
+            if (_currentCoverInfo != null)
+                _coverManager.LeaveCoverFree(_currentCoverInfo.index);
+        }
+
+        private void CheckGameState()
+        {
+            if (gameManager.currentState != GameState.Game)
+            {
+                _agent.isStopped = true;
+                Destroy(gameObject);
+            }
         }
 
         private void MoveTo()
@@ -90,12 +95,6 @@ namespace _Root._Scripts.Game
             _isInCover = true;
             _coverManager.SetCoverBusy(_nextCoverInfo.index);
             _currentCoverInfo = _nextCoverInfo;
-        }
-
-        private void OnDestroy()
-        {
-            if (_currentCoverInfo != null)
-                _coverManager.LeaveCoverFree(_currentCoverInfo.index);
         }
 
         private bool CoversAreBusyMoveToTarget()

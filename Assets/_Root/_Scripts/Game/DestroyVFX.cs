@@ -4,12 +4,11 @@ namespace _Root._Scripts.Game
 {
     public class DestroyVFX : MonoBehaviour
     {
-        [SerializeField] private float _time;
+        private const float TIME = 3f;
 
         private void Start()
         {
-            _time = 3f;
-            Destroy(gameObject, _time);
+            Destroy(gameObject, TIME);
         }
     }
 }

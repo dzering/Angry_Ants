@@ -45,9 +45,7 @@ namespace _Root._Scripts.Game
                 : new CoverInfoData() { index = index, position = _covers[index].transform.position };
         }
 
-        public void SetCoverBusy(int index)
-        {
+        public void SetCoverBusy(int index) => 
             _isBusyCovers[index] = true;
-        }
     }
 }

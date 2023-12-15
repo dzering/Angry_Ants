@@ -36,7 +36,7 @@ namespace _Root._Scripts.Game
             while (_gameManager.currentState == GameState.Game)
             {
                 yield return new WaitForSeconds(_difficulty.timeBetweenEnemySpawn);
-                SpawnEnemies(_difficulty.numberOfEnemySpawn);
+                SpawnEnemies(_difficulty.currentEnemiesSpawnAmount);
             }
         }
 

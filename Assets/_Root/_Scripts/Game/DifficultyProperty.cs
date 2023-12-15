@@ -5,45 +5,55 @@ namespace _Root._Scripts.Game
     public class DifficultyProperty
     {
         //"Difficulty properties"
-        public int numberOfEnemySpawn;
+        public int currentEnemiesSpawnAmount;
         public float timeBetweenEnemySpawn = 4f;
-        private int _maxNumber = 4;
-
-
-        //"Progression properties"
-        private float _timeBetweenEnemySpawnStart;
-
+        private readonly int _maxEnemiesAmount = 4;
+        
+        private readonly float _timeBetweenEnemySpawnStart;
         private float _currentTime;
 
         public DifficultyProperty()
         {
-            _maxNumber++;
+            _maxEnemiesAmount++;
             _timeBetweenEnemySpawnStart = timeBetweenEnemySpawn;
         }
 
         public void Execute()
         {
+            if (!IsReadyNextChangeDifficulty()) 
+                return;
+        
+            ChangeDifficulty();
+            RechargeTime();
+        }
+
+        private bool IsReadyNextChangeDifficulty()
+        {
             if (_currentTime < timeBetweenEnemySpawn)
             {
                 _currentTime += Time.deltaTime;
-                return;
+                return false;
             }
-        
-            numberOfEnemySpawn++;
-            numberOfEnemySpawn %= _maxNumber;
-       
-            if (numberOfEnemySpawn == 0)
+            _currentTime = 0;
+            return true;
+        }
+
+        private void ChangeDifficulty()
+        {
+            currentEnemiesSpawnAmount++;
+            currentEnemiesSpawnAmount %= _maxEnemiesAmount;
+
+            if (currentEnemiesSpawnAmount == 0)
             {
-                numberOfEnemySpawn++;
+                currentEnemiesSpawnAmount++;
                 timeBetweenEnemySpawn--;
             }
+        }
 
-            if (timeBetweenEnemySpawn == 1)
-            {
+        private void RechargeTime()
+        {
+            if (timeBetweenEnemySpawn < 1)
                 timeBetweenEnemySpawn = _timeBetweenEnemySpawnStart;
-            }
-
-            _currentTime = 0;
         }
     }
 }
