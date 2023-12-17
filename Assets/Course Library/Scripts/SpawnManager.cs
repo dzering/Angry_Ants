@@ -11,7 +11,6 @@ namespace Course_Library.Scripts
         public int waveNumber = 1;
 
         public float randomRange = 9;
-        // Start is called before the first frame update
         void Start()
         {
             SpawnEnemyWave(waveNumber);

@@ -17,9 +17,13 @@ namespace _Root._Scripts.Game
             if (_agent == null)
                 _agent = GetComponent<NavMeshAgent>();
         }
-
-        // Update is called once per frame
+        
         void Update()
+        {
+            PlayAnimation();
+        }
+
+        private void PlayAnimation()
         {
             _animator.SetFloat(Speed, _agent.velocity.sqrMagnitude);
             _animator.speed = _agent.speed;

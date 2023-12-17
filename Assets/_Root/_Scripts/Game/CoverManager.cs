@@ -10,9 +10,6 @@ namespace _Root._Scripts.Game
         void Start() =>
             _isBusyCovers = new bool[_covers.Length];
 
-        public void LeaveCoverFree(int currentCoverIndex) => 
-            _isBusyCovers[currentCoverIndex] = false;
-
         public CoverInfoData GetClosestCover(Vector3 subjectPosition)
         {
             int count = 0;
@@ -45,7 +42,10 @@ namespace _Root._Scripts.Game
                 : new CoverInfoData() { index = index, position = _covers[index].transform.position };
         }
 
-        public void SetCoverBusy(int index) => 
-            _isBusyCovers[index] = true;
+        public void SetCoverFree(int currentCoverIndex) => 
+            _isBusyCovers[currentCoverIndex] = false;
+
+        public void SetCoverBusy(CoverInfoData coverInfoData) => 
+            _isBusyCovers[coverInfoData.index] = true;
     }
 }

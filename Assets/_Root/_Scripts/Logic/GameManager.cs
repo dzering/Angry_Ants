@@ -6,14 +6,14 @@ namespace _Root._Scripts.Logic
 {
     public class GameManager : MonoBehaviour
     {
+        public BestResult bestResult;
         [HideInInspector] public GameState currentState;
+        
         [SerializeField] private GameObject _gameOverPanel;
         [SerializeField] private TextMeshProUGUI _scoreText;
         [SerializeField] private TextMeshProUGUI _bestResultText;
 
         private SaveAndLoad<BestResult> _bestResultPersistence;
-        public BestResult bestResult;
-
         private int _score;
         private bool _isNeedToUpdateResult;
 
@@ -22,11 +22,11 @@ namespace _Root._Scripts.Logic
             currentState = GameState.Game;
             _bestResultPersistence = new SaveAndLoad<BestResult>(Application.persistentDataPath + "BestResults.json");
             bestResult = _bestResultPersistence.Load();
+            _score = 0;
         }
 
         private void Start()
         {
-            _score = 0;
             UpdateScore(_score);
             UpdateBestResult(bestResult);
         }

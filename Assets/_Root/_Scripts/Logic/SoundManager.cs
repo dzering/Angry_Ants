@@ -4,29 +4,29 @@ namespace _Root._Scripts.Logic
 {
     public class SoundManager : MonoBehaviour
     {
-        public static SoundManager instance;
-        
-        public AudioSource enemySource;
-        public AudioSource backgroundSource;
+        public static SoundManager Instance { get; private set; }
 
-        public AudioClip slapClip;
-        public AudioClip backgroundClip;
+        [SerializeField] private AudioSource _enemySource;
+        [SerializeField] private AudioSource _backgroundSource;
+
+        [SerializeField] private AudioClip _slapClip;
+        [SerializeField] private AudioClip _backgroundClip;
         
         private void Awake()
         {
-            if(instance != null)
+            if(Instance != null)
                 Destroy(gameObject);
             else
             {
-                instance = this;
+                Instance = this;
             }
 
-            backgroundSource.clip = backgroundClip;
+            _backgroundSource.clip = _backgroundClip;
             PlayBackground();
         }
 
-        private void PlayBackground() => backgroundSource.Play();
+        private void PlayBackground() => _backgroundSource.Play();
         public void PlaySlap() => 
-            enemySource.PlayOneShot(slapClip, 0.7f);
+            _enemySource.PlayOneShot(_slapClip, 0.7f);
     }
 }

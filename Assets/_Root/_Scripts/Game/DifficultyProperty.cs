@@ -5,8 +5,9 @@ namespace _Root._Scripts.Game
     public class DifficultyProperty
     {
         //"Difficulty properties"
-        public int currentEnemiesSpawnAmount;
-        public float timeBetweenEnemySpawn = 4f;
+        public int CurrentEnemiesSpawnAmount { get;private set; }
+        public float TimeBetweenEnemySpawn { get; private set; } = 4f;
+
         private readonly int _maxEnemiesAmount = 4;
         
         private readonly float _timeBetweenEnemySpawnStart;
@@ -15,7 +16,7 @@ namespace _Root._Scripts.Game
         public DifficultyProperty()
         {
             _maxEnemiesAmount++;
-            _timeBetweenEnemySpawnStart = timeBetweenEnemySpawn;
+            _timeBetweenEnemySpawnStart = TimeBetweenEnemySpawn;
         }
 
         public void Execute()
@@ -29,7 +30,7 @@ namespace _Root._Scripts.Game
 
         private bool IsReadyNextChangeDifficulty()
         {
-            if (_currentTime < timeBetweenEnemySpawn)
+            if (_currentTime < TimeBetweenEnemySpawn)
             {
                 _currentTime += Time.deltaTime;
                 return false;
@@ -40,20 +41,20 @@ namespace _Root._Scripts.Game
 
         private void ChangeDifficulty()
         {
-            currentEnemiesSpawnAmount++;
-            currentEnemiesSpawnAmount %= _maxEnemiesAmount;
+            CurrentEnemiesSpawnAmount++;
+            CurrentEnemiesSpawnAmount %= _maxEnemiesAmount;
 
-            if (currentEnemiesSpawnAmount == 0)
+            if (CurrentEnemiesSpawnAmount == 0)
             {
-                currentEnemiesSpawnAmount++;
-                timeBetweenEnemySpawn--;
+                CurrentEnemiesSpawnAmount++;
+                TimeBetweenEnemySpawn--;
             }
         }
 
         private void RechargeTime()
         {
-            if (timeBetweenEnemySpawn < 1)
-                timeBetweenEnemySpawn = _timeBetweenEnemySpawnStart;
+            if (TimeBetweenEnemySpawn < 1)
+                TimeBetweenEnemySpawn = _timeBetweenEnemySpawnStart;
         }
     }
 }

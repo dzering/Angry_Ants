@@ -7,7 +7,7 @@ namespace _Root._Scripts.Game
     {
         [SerializeField] private Transform _centerAttackSphere;
         [SerializeField] private LayerMask _layerMask;
-        private Enemy _enemy;
+        private Spider _spider;
         private Animator _animator;
         private NavMeshAgent _agent;
         private float _radius = 0.2f;
@@ -21,7 +21,7 @@ namespace _Root._Scripts.Game
         private void Initialize()
         {
             _result = new Collider[1];
-            _enemy = GetComponent<Enemy>();
+            _spider = GetComponent<Spider>();
             _animator = GetComponent<Animator>();
             _agent = GetComponent<NavMeshAgent>();
         }
